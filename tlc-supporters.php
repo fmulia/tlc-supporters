@@ -11,6 +11,7 @@
  * Text Domain: TLC Supporters
  */
 
+define(PAYPAL_IPN_ACTION, 0);
 register_activation_hook( __FILE__, array( 'tlcSupporters', 'install' ) );
 /**
 * TLC Supporters
@@ -36,10 +37,9 @@ class tlcSupporters{
 	//IPN related stuff
 	//This function will load on every page load.
 	public function template_redirect(){
-		echo plugin_dir_path( __FILE__ );
 		$action = $this->template_action();
 		switch ($action) {
-			case 0:
+			case PAYPAL_IPN_ACTION:
 				$this->handle_paypal_ipn();
 				break;
 			
@@ -52,14 +52,58 @@ class tlcSupporters{
 	//Returns action to take
 	private function template_action(){
 		//TODO
+		if ($this->validate_paypal_ipn()) {
+			return PAYPAL_IPN_ACTION;
+		}
 		return 0;
+	}
+
+	private function validate_paypal_ipn(){
+		/*
+		* TODO
+		* Check if the url is correct
+		*/
+		$_POST['cmd'] = "_notify-validate";
+
+		$params = array(
+			'body' => $_POST,
+			'sslverify' => apply_filters( 'paypal_framework_sslverify', false ),
+			'timeout' 	=> 30,
+		);
+
+		$resp = wp_remote_post( $this->_url[$this->_settings['sandbox']], $params );
+
+		// Put the $_POST data back to how it was so we can pass it to the action
+		unset( $_POST['cmd'] );
+
+		// If the response was valid, check to see if the request was valid
+		if ( !is_wp_error($resp) && $resp['response']['code'] >= 200 && $resp['response']['code'] < 300 && (strcmp( $resp['body'], "VERIFIED") == 0)) {
+			//Success
+			return true;
+		} else {
+			//Failure
+			return false;
+		}
 	}
 
 	//Do the usual paypal ipn stuff
 	private function handle_paypal_ipn(){
-		//TODO
+		$this->paypal_ipn_db();
+		$this->paypal_ipn_mailchimp();
+		//stops the request so that PayPal receives a 200 response
+		exit;
+	}
+
+	private function paypal_ipn_db(){
+		//save $_POST['payer_email'] + $_POST['mc_gross'] and $_POST['mc_currency'] and $_POST['payment_status'] to db
 		return 0;
 	}
+
+	private function paypal_ipn_mailchimp(){
+		//add $_POST['payer_email'] to mailchimp
+	}
+
+	
 
 	//Handler for shortcode for donations flow
 	public function track_impact_handler(){
