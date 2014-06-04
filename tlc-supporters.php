@@ -22,7 +22,9 @@ class tlcSupporters{
 
 	private function __construct(){
 		//Incepting IPN
-		add_action( 'template_redirect', array( $this, 'template_redirect' ) );
+		add_action('template_redirect', array($this, 'template_redirect'));
+		add_shortcode('track-impact', array($this, 'track_impact_handler'));
+		add_action('admin_menu', array($this,'admin_menu'));
 	}
 
 	public static function getInstance() {
@@ -30,10 +32,11 @@ class tlcSupporters{
 			self::$instance = new self;
 		return self::$instance;
 	}
-	
+
 	//IPN related stuff
 	//This function will load on every page load.
 	public function template_redirect(){
+		echo plugin_dir_path( __FILE__ );
 		$action = $this->template_action();
 		switch ($action) {
 			case 0:
@@ -58,6 +61,20 @@ class tlcSupporters{
 		return 0;
 	}
 
+	//Handler for shortcode for donations flow
+	public function track_impact_handler(){
+		//TODO
+		$output = '';
+		return $output;
+	}
+
+	public function admin_menu(){
+		add_options_page("TLCSupporters Admin", "TLCSupporters Admin", 1, "TLCSupporters_Admin", array($this, "admin_page"));
+	}
+
+	public function admin_page(){
+		include('views/admin_page.php');
+	}
 	/*
 	* Installation script
 	*/
@@ -69,7 +86,7 @@ class tlcSupporters{
 		$sql = 'query here';
 
 		require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-		dbDelta($sql);
+		//dbDelta($sql);
 
 		add_option("tlcSupporters_db_version", $db_version);
 
