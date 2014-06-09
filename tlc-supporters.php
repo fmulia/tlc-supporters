@@ -11,8 +11,9 @@
  * Text Domain: TLC Supporters
  */
 
-define(PAYPAL_IPN_ACTION, 0);
+define(PAYPAL_IPN_ACTION, 1);
 register_activation_hook( __FILE__, array( 'tlcSupporters', 'install' ) );
+global $wp;
 /**
 * TLC Supporters
 */
@@ -20,12 +21,15 @@ class tlcSupporters{
 	private $supporter_table_name = "supporters";
 	private $db_version = "1.0";
 	static private $instance = false;
+	
+	private $current_url;
 
 	private function __construct(){
 		//Incepting IPN
 		add_action('template_redirect', array($this, 'template_redirect'));
 		add_shortcode('track-impact', array($this, 'track_impact_handler'));
 		add_action('admin_menu', array($this,'admin_menu'));
+		$this->current_url = add_query_arg( $wp->query_string, '', home_url( $wp->request ));
 	}
 
 	public static function getInstance() {
@@ -37,7 +41,6 @@ class tlcSupporters{
 	//IPN related stuff
 	//This function will load on every page load.
 	public function template_redirect(){
-		return 0;
 		$action = $this->template_action();
 		switch ($action) {
 			case PAYPAL_IPN_ACTION:
@@ -52,7 +55,6 @@ class tlcSupporters{
 
 	//Returns action to take
 	private function template_action(){
-		//TODO
 		if ($this->validate_paypal_ipn()) {
 			return PAYPAL_IPN_ACTION;
 		}
@@ -64,6 +66,9 @@ class tlcSupporters{
 		* TODO
 		* Check if the url is correct
 		*/
+		if(!(isset($_GET['action']) && $_GET['action'] == 'ipn')){
+			return false;
+		}
 		$_POST['cmd'] = "_notify-validate";
 
 		$params = array(
@@ -71,7 +76,7 @@ class tlcSupporters{
 			'sslverify' => apply_filters( 'paypal_framework_sslverify', false ),
 			'timeout' 	=> 30,
 		);
-
+		//TODO: add paypal url
 		$resp = wp_remote_post( $this->_url[$this->_settings['sandbox']], $params );
 
 		// Put the $_POST data back to how it was so we can pass it to the action
