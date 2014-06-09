@@ -37,6 +37,7 @@ class tlcSupporters{
 	//IPN related stuff
 	//This function will load on every page load.
 	public function template_redirect(){
+		return 0;
 		$action = $this->template_action();
 		switch ($action) {
 			case PAYPAL_IPN_ACTION:
