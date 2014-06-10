@@ -114,7 +114,7 @@ class tlcSupporters{
 	//Handler for shortcode for donations flow
 	public function track_impact_handler(){
 		//TODO
-		$output = '';
+		$output = file_get_contents('wp-content/plugins/tlc-supporters/views/track_impact.php');
 		return $output;
 	}
 
