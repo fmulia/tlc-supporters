@@ -54,7 +54,7 @@ function getImpacts(money)
     	return b.value - a.value;
 	});
 
-	var perImpact;
+	var perImpact = new Array();
 	for(var i = 0; i < impactsNum; ++i)
 	{
 		perImpact[i] = money / impactsNum;
