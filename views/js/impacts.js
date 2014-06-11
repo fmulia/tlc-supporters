@@ -38,11 +38,11 @@ function getImpacts(money)
 	// Generating the random impacts
 	var pickedImpacts = new Array();
 	var pickedImpactsId = new Array();
-	for(int i = 0; i < impactsNum; ++i)
+	for(var i = 0; i < impactsNum; ++i)
 	{
 		var idPicked;
 		do{
-			idPicked = Math.floor((Math.random() * impactsNum);
+			idPicked = Math.floor((Math.random() * impactsNum));
 		}while(typeof pickedImpactsId[idPicked] != 'undefined')
 
 		pickedImpactsId[idPicked] = 1;
