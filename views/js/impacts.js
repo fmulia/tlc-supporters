@@ -90,3 +90,51 @@ function getImpacts(money)
 	}
 	return result;
 }
+
+
+//Get all the URL get params
+var urlParams;
+(window.onpopstate = function () {
+    var match,
+        pl     = /\+/g,  // Regex for replacing addition symbol with a space
+        search = /([^&=]+)=?([^&]*)/g,
+        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+        query  = window.location.search.substring(1);
+
+    urlParams = {};
+    while (match = search.exec(query))
+       urlParams[decode(match[1])] = decode(match[2]);
+})();
+
+
+function main(state){
+	if(state == 1){
+		//branch: track amount
+	}
+	else if(state == 2){
+		//branch: display postcard and donate links
+		var money = 10;//get this dynamically later
+		var outputs = getImpacts(money);
+		displayPostcard("#postcard1", outputs);
+	}
+	else if(state == 3){
+		//branch: redirect back from paypal and display the link
+		var postcard = buildPostcardContentFromQueryString();
+		displayPostcard("#postcard2", postcard);
+	}
+}
+
+function displayPostcard(id, contents){
+	//TODO: display the postcard
+}
+
+function buildPostcardContentFromQueryString(){
+	var contents = [];
+	var breakdown = urlParams['card'].split(';');
+	var item;
+	for (var i = breakdown.length - 1; i >= 0; i--) {
+		item = breakdown[i].split(':');
+		contents.push{item[0]: item[1]}
+	};
+	return contents;
+}

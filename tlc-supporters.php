@@ -12,7 +12,6 @@
  */
 
 define(PAYPAL_IPN_ACTION, 1);
-register_activation_hook( __FILE__, array( 'tlcSupporters', 'install' ) );
 global $wp;
 /**
 * TLC Supporters
@@ -94,15 +93,9 @@ class tlcSupporters{
 
 	//Do the usual paypal ipn stuff
 	private function handle_paypal_ipn(){
-		$this->paypal_ipn_db();
 		$this->paypal_ipn_mailchimp();
 		//stops the request so that PayPal receives a 200 response
 		exit;
-	}
-
-	private function paypal_ipn_db(){
-		//save $_POST['payer_email'] + $_POST['mc_gross'] and $_POST['mc_currency'] and $_POST['payment_status'] to db
-		return 0;
 	}
 
 	private function paypal_ipn_mailchimp(){
