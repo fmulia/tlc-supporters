@@ -1,25 +1,26 @@
 // Generate impact of a donation.
 
+var impactData = [{desc:'a', value:13.88, url:'images/icons-impacts/icon-big-ideas.jpg', impact_instances:0},
+				  {desc:'b', value:1.39, url:'images/icons-impacts/icon-bikes.jpg', impact_instances:0},
+				  {desc:'c', value:0.5, url:'images/icons-impacts/icon-books.jpg', impact_instances:0},
+				  {desc:'d', value:1.25, url:'images/icons-impacts/icon-citizens-rights.jpg', impact_instances:0},
+				  //{desc:'e', value:0.5, url:'images/icons-impacts/icon-communities-priorities.jpg', impact_instances:0},
+				  {desc:'f', value:1.04, url:'images/icons-impacts/icon-community-campaigns.jpg', impact_instances:0},
+				  {desc:'g', value:0.28, url:'images/icons-impacts/icon-community-consultations.jpg', impact_instances:0},
+				  //{desc:'h', value:0.8, url:'images/icons-impacts/icon-crcp.jpg', impact_instances:0},
+				  {desc:'i', value:22.50, url:'images/icons-impacts/icon-families.jpg', impact_instances:0},
+				  {desc:'j', value:16.67, url:'images/icons-impacts/icon-futures.jpg', impact_instances:0},
+				  {desc:'k', value:4.17, url:'images/icons-impacts/icon-health-care.jpg', impact_instances:0},
+				  {desc:'l', value:25.00, url:'images/icons-impacts/icon-scholarship.jpg', impact_instances:0},
+				  //{desc:'m', value:0.13, url:'images/icons-impacts/icon-school-community.jpg', impact_instances:0},
+				  {desc:'n', value:1.9, url:'images/icons-impacts/icon-school-support.jpg', impact_instances:0},
+				  {desc:'o', value:12.5, url:'images/icons-impacts/icon-self-sustaining.jpg', impact_instances:0},
+				  {desc:'p', value:0.69, url:'images/icons-impacts/icon-solar-lamp.jpg', impact_instances:0},
+				  {desc:'q', value:3.60, url:'images/icons-impacts/icon-teachers.jpg', impact_instances:0},
+				  {desc:'r', value:0.66, url:'images/icons-impacts/icon-tool-kits.jpg', impact_instances:0}];
+				  
 function getImpacts(money)
 {
-	var impactData = [{desc:'a', value:13.88, url:'images/icons-impacts/icon-big-ideas.jpg', impact_instances:0},
-					  {desc:'b', value:1.39, url:'images/icons-impacts/icon-bikes.jpg', impact_instances:0},
-					  {desc:'c', value:0.5, url:'images/icons-impacts/icon-books.jpg', impact_instances:0},
-					  {desc:'d', value:1.25, url:'images/icons-impacts/icon-citizens-rights.jpg', impact_instances:0},
-					  //{desc:'e', value:0.5, url:'images/icons-impacts/icon-communities-priorities.jpg', impact_instances:0},
-					  {desc:'f', value:1.04, url:'images/icons-impacts/icon-community-campaigns.jpg', impact_instances:0},
-					  {desc:'g', value:0.28, url:'images/icons-impacts/icon-community-consultations.jpg', impact_instances:0},
-					  //{desc:'h', value:0.8, url:'images/icons-impacts/icon-crcp.jpg', impact_instances:0},
-					  {desc:'i', value:22.50, url:'images/icons-impacts/icon-families.jpg', impact_instances:0},
-					  {desc:'j', value:16.67, url:'images/icons-impacts/icon-futures.jpg', impact_instances:0},
-					  {desc:'k', value:4.17, url:'images/icons-impacts/icon-health-care.jpg', impact_instances:0},
-					  {desc:'l', value:25.00, url:'images/icons-impacts/icon-scholarship.jpg', impact_instances:0},
-					  //{desc:'m', value:0.13, url:'images/icons-impacts/icon-school-community.jpg', impact_instances:0},
-					  {desc:'n', value:1.9, url:'images/icons-impacts/icon-school-support.jpg', impact_instances:0},
-					  {desc:'o', value:12.5, url:'images/icons-impacts/icon-self-sustaining.jpg', impact_instances:0},
-					  {desc:'p', value:0.69, url:'images/icons-impacts/icon-solar-lamp.jpg', impact_instances:0},
-					  {desc:'q', value:3.60, url:'images/icons-impacts/icon-teachers.jpg', impact_instances:0},
-					  {desc:'r', value:0.66, url:'images/icons-impacts/icon-tool-kits.jpg', impact_instances:0}];
 	var impactsNum = 0;
 	
 	if(money <10){}
@@ -113,6 +114,7 @@ function main(state){
 
 function displayPostcard(id, contents){
 	//TODO: display the postcard
+	[{id: numb}]
 }
 
 function buildPostcardContentFromQueryString(){
@@ -121,7 +123,7 @@ function buildPostcardContentFromQueryString(){
 	var item;
 	for (var i = breakdown.length - 1; i >= 0; i--) {
 		item = breakdown[i].split(':');
-		contents.push({ 'id': item[0], 'amt':item[1]});
+		contents.push({ desc: item[0], num:parseInt(item[1])});
 	};
 	return contents;
 }
