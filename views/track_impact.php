@@ -103,6 +103,7 @@
 /* end show impact */
 
 </style>
+<script src="js/impacts.js"></script>
 <div id="trackImpact">
 	<div id="donation" class="donateContainer">
 		<h1>TRACK YOUR IMPACT</h1>
