@@ -29,8 +29,7 @@ class tlcSupporters{
 		//Incepting IPN
 		add_action('template_redirect', array($this, 'template_redirect'));
 		add_shortcode('track-impact', array($this, 'track_impact_handler'));
-		add_action('admin_menu', array($this,'admin_menu'));
-		$this->current_url = add_query_arg( $wp->query_string, '', home_url( $wp->request ));
+		//add_action('admin_menu', array($this,'admin_menu'));
 	}
 
 	public static function getInstance() {
@@ -129,22 +128,7 @@ class tlcSupporters{
 	public function admin_page(){
 		include('views/admin_page.php');
 	}
-	/*
-	* Installation script
-	*/
-	static function install(){
-		global $wpdb;
 
-		$table_name = $wpdb->prefix . $supporter_table_name;
-
-		$sql = 'query here';
-
-		require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-		//dbDelta($sql);
-
-		add_option("tlcSupporters_db_version", $db_version);
-
-	}
 }
 
 $tlc_supporters = tlcSupporters::getInstance();
