@@ -2,29 +2,24 @@
 
 function getImpacts(money)
 {
-	var impactData = [{desc:'a', value:0.1, url:'https://.png', impact_instances:0},
-					  {desc:'b', value:0.2, url:'https://.png', impact_instances:0},
-					  {desc:'c', value:0.3, url:'https://.png', impact_instances:0},
-					  {desc:'d', value:0.4, url:'https://.png', impact_instances:0},
-					  {desc:'e', value:0.5, url:'https://.png', impact_instances:0},
-					  {desc:'f', value:0.6, url:'https://.png', impact_instances:0},
-					  {desc:'g', value:0.7, url:'https://.png', impact_instances:0},
-					  {desc:'h', value:0.8, url:'https://.png', impact_instances:0},
-					  {desc:'i', value:0.9, url:'https://.png', impact_instances:0},
-					  {desc:'j', value:0.10, url:'https://.png', impact_instances:0},
-					  {desc:'k', value:0.11, url:'https://.png', impact_instances:0},
-					  {desc:'l', value:0.12, url:'https://.png', impact_instances:0},
-					  {desc:'m', value:0.13, url:'https://.png', impact_instances:0},
-					  {desc:'n', value:0.14, url:'https://.png', impact_instances:0},
-					  {desc:'o', value:0.15, url:'https://.png', impact_instances:0},
-					  {desc:'p', value:0.16, url:'https://.png', impact_instances:0},
-					  {desc:'q', value:0.17, url:'https://.png', impact_instances:0},
-					  {desc:'r', value:0.18, url:'https://.png', impact_instances:0},
-					  {desc:'s', value:0.19, url:'https://.png', impact_instances:0},
-					  {desc:'t', value:0.20, url:'https://.png', impact_instances:0},
-					  {desc:'u', value:0.21, url:'https://.png', impact_instances:0},
-					  {desc:'v', value:0.22, url:'https://.png', impact_instances:0},
-					  {desc:'w', value:0.23, url:'https://.png', impact_instances:0}];
+	var impactData = [{desc:'a', value:13.88, url:'images/icons-impacts/icon-big-ideas.jpg', impact_instances:0},
+					  {desc:'b', value:1.39, url:'images/icons-impacts/icon-bikes.jpg', impact_instances:0},
+					  {desc:'c', value:0.5, url:'images/icons-impacts/icon-books.jpg', impact_instances:0},
+					  {desc:'d', value:1.25, url:'images/icons-impacts/icon-citizens-rights.jpg', impact_instances:0},
+					  //{desc:'e', value:0.5, url:'images/icons-impacts/icon-communities-priorities.jpg', impact_instances:0},
+					  {desc:'f', value:1.04, url:'images/icons-impacts/icon-community-campaigns.jpg', impact_instances:0},
+					  {desc:'g', value:0.28, url:'images/icons-impacts/icon-community-consultations.jpg', impact_instances:0},
+					  //{desc:'h', value:0.8, url:'images/icons-impacts/icon-crcp.jpg', impact_instances:0},
+					  {desc:'i', value:22.50, url:'images/icons-impacts/icon-families.jpg', impact_instances:0},
+					  {desc:'j', value:16.67, url:'images/icons-impacts/icon-futures.jpg', impact_instances:0},
+					  {desc:'k', value:4.17, url:'images/icons-impacts/icon-health-care.jpg', impact_instances:0},
+					  {desc:'l', value:25.00, url:'images/icons-impacts/icon-scholarship.jpg', impact_instances:0},
+					  //{desc:'m', value:0.13, url:'images/icons-impacts/icon-school-community.jpg', impact_instances:0},
+					  {desc:'n', value:1.9, url:'images/icons-impacts/icon-school-support.jpg', impact_instances:0},
+					  {desc:'o', value:12.5, url:'images/icons-impacts/icon-self-sustaining.jpg', impact_instances:0},
+					  {desc:'p', value:0.69, url:'images/icons-impacts/icon-solar-lamp.jpg', impact_instances:0},
+					  {desc:'q', value:3.60, url:'images/icons-impacts/icon-teachers.jpg', impact_instances:0},
+					  {desc:'r', value:0.66, url:'images/icons-impacts/icon-tool-kits.jpg', impact_instances:0}];
 	var impactsNum = 0;
 	
 	if(money <10){}
