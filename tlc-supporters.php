@@ -11,6 +11,8 @@
  * Text Domain: TLC Supporters
  */
 
+require_once 'wp-content/plugins/tlc-supporters/lib/MCAPI.class.php';
+
 define(PAYPAL_IPN_ACTION, 1);
 global $wp;
 /**
@@ -27,8 +29,7 @@ class tlcSupporters{
 		//Incepting IPN
 		add_action('template_redirect', array($this, 'template_redirect'));
 		add_shortcode('track-impact', array($this, 'track_impact_handler'));
-		add_action('admin_menu', array($this,'admin_menu'));
-		$this->current_url = add_query_arg( $wp->query_string, '', home_url( $wp->request ));
+		//add_action('admin_menu', array($this,'admin_menu'));
 	}
 
 	public static function getInstance() {
@@ -100,6 +101,15 @@ class tlcSupporters{
 
 	private function paypal_ipn_mailchimp(){
 		//add $_POST['payer_email'] to mailchimp
+		$mcapikey = 'e052d15ae7d0ceafaa09ae9e13d30750-us2';
+		$listId = '9451f48648'; //list ID to subscribe to
+		$mcapi = new MCAPI($mcapikey);
+		$merge_vars = array('');
+		//pass the payer email address to $payer_email
+		$retval = $mcapi->listSubscribe( $listId, $payer_email, $merge_vars, 'html', false, false, true, true );
+		if ($mcapi->errorCode){
+			//do something if there is subscription error
+		} 
 	}
 
 	
@@ -118,22 +128,7 @@ class tlcSupporters{
 	public function admin_page(){
 		include('views/admin_page.php');
 	}
-	/*
-	* Installation script
-	*/
-	static function install(){
-		global $wpdb;
 
-		$table_name = $wpdb->prefix . $supporter_table_name;
-
-		$sql = 'query here';
-
-		require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-		//dbDelta($sql);
-
-		add_option("tlcSupporters_db_version", $db_version);
-
-	}
 }
 
 $tlc_supporters = tlcSupporters::getInstance();
