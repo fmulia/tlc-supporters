@@ -93,6 +93,15 @@
 	display: block;
 }
 /* end track impact */
+
+/* show impact */
+.impactContainer{
+	width: 100%;
+	height: auto;
+}
+
+/* end show impact */
+
 </style>
 <div id="trackImpact">
 	<div id="donation" class="donateContainer">
@@ -102,8 +111,11 @@
 		</div>
 		<div class="txtTitle">WHAT CAN YOUR MONEY DO?</div>
 		<div class="actions">
-			<a href="" class="buttons-1">LET'S DO IT!</a>
-			<a href="" class="buttons-2">MAKE IT MONTHLY</a>
+			<!-- <a href="" class="buttons-1">LET'S DO IT!</a>
+			<a href="" class="buttons-2">MAKE IT MONTHLY</a> -->
+
+			 <a href="" class="buttons-1">SHOW ME</a>
+
 		</div>
 		<p class="descr">
 		<span>HOW THIS WORKS?</span>
@@ -111,7 +123,9 @@
 		</p>
 	</div>
 	<div id="showImpact">
-		
+		<div class="impactContainer">
+
+		</div>
 	</div>
 	<div id="cardOptions">
 		
