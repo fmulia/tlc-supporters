@@ -6,6 +6,7 @@
 	background: #000;
 	color: #fff;
 	padding:30px 10px;
+	display: none;
 }
 .donateContainer h1{
 	text-align: center;
@@ -98,7 +99,76 @@
 .impactContainer{
 	width: 100%;
 	height: auto;
+	background: #000;
+	position: relative;
 }
+.amountC{
+	color: #fff;
+}
+.impactC{
+	background: #fff;
+}
+.impacts{
+	width: 50%;
+	background: #f5f5f5;
+	border:1px solid #fff;
+	height: 300px;
+	width: 300px;
+	float: left;
+	position: relative;
+}
+.impacts .number{
+	color: #fff;
+	position: absolute;
+	right: 43px;
+	top: 9px;
+	font-size: 40px;
+	transform: rotate(5deg);
+	-ms-transform: rotate(5deg);
+	-webkit-transform: rotate(5deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.no2{
+	color: #fff;
+	position: absolute;
+	right: 79px;
+	bottom: 95px;
+	font-size: 36px;
+	transform: rotate(8deg);
+	-ms-transform: rotate(8deg);
+	-webkit-transform: rotate(8deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.no3{
+	color: #fff;
+	position: absolute;
+	left: 30px;
+	top: 17px;
+	font-size: 45px;
+	transform: rotate(8deg);
+	-ms-transform: rotate(8deg);
+	-webkit-transform: rotate(-8deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+#impact-1{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-big-ideas.jpg') no-repeat;
+	background-size: 100%;
+}
+#impact-2{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-bikes.jpg') no-repeat;
+	background-size: 92%;
+}
+#impact-3{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-books.jpg') no-repeat;
+	background-size: 88%;
+}
+
 
 /* end show impact */
 
@@ -125,7 +195,15 @@
 	</div>
 	<div id="showImpact">
 		<div class="impactContainer">
-
+			<div class="amountC">
+				IN 1 MONTTH IN A TLC COMMUNITY. $100 CAN ENABLE...
+				<a href="" class="buttons-1">LET'S DO IT!</a>
+			</div>
+			<div class="impactC">
+				<div class="impacts" id="impact-1"><div class="no2">101</div></div>
+				<div class="impacts" id="impact-2"><div class="number">502</div></div>
+				<div class="impacts" id="impact-3"><div class="no3">101</div></div>
+			</div>
 		</div>
 	</div>
 	<div id="cardOptions">
