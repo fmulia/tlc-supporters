@@ -134,7 +134,7 @@ function buildPostcardContentFromQueryString(){
 	var item;
 	for (var i = breakdown.length - 1; i >= 0; i--) {
 		item = breakdown[i].split(':');
-		contents.push({item[0]: item[1]});
+		contents.push({ 'id': item[0], 'amt':item[1]});
 	};
 	return contents;
 }
