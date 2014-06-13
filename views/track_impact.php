@@ -439,7 +439,7 @@
 /* end show impact */
 
 </style>
-<script src="wp-content/plugins/tlc-supporters/views/js/impacts.js"></script>
+<script src="/wp-content/plugins/tlc-supporters/views/js/impacts.js"></script>
 <div id="trackImpact">
 	<div id="donation" class="donateContainer">
 		<h1>TRACK YOUR IMPACT</h1>
@@ -463,7 +463,7 @@
 		<div class="impactContainer">
 			<div class="amountC">
 				IN 1 MONTTH IN A TLC COMMUNITY. $<span id="donationAmount"></span> CAN ENABLE...
-				<a href="https://sandbox.paypal.com/cgi-bin/webscr?cmd=_donations&no_shipping=0&no_note=1&submit=Donate&business=fmulia-us-donate@paypal.com&item_name=A+charitable+donation&amount=<?php echo $donationAmt ?>&currency_code=USD&return=<?php echo $returnUrl ?>&cancel=<?php echo $cancelUrl ?>" class="buttons-1">LET'S DO IT!</a>
+				<a href="" id="donationURL" class="buttons-1" onclick="startCookie()">LET'S DO IT!</a>
 			</div>
 			<div class="impactC">
 				<div class="impacts nodisplay" id="impact-1"><div id="impactval-1" class="no2">101</div></div>

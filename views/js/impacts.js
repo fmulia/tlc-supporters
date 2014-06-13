@@ -1,5 +1,22 @@
 // Generate impact of a donation.
-				  
+
+//Get all the URL get params
+var urlParams;
+(window.onpopstate = function () {
+    var match,
+        pl     = /\+/g,  // Regex for replacing addition symbol with a space
+        search = /([^&=]+)=?([^&]*)/g,
+        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
+        query  = window.location.search.substring(1);
+
+    urlParams = {};
+    while (match = search.exec(query))
+       urlParams[decode(match[1])] = decode(match[2]);
+})();
+
+var donationAmt = '';
+var returnUrl = '';
+var cancelUrl = window.location;
 function getImpacts(money)
 {
 	var impactData = [{desc:'1', value:13.88, url:'images/icons-impacts/icon-big-ideas.jpg', impact_instances:0},
@@ -78,23 +95,15 @@ function getImpacts(money)
 	return result;
 }
 
-
-//Get all the URL get params
-var urlParams;
-(window.onpopstate = function () {
-    var match,
-        pl     = /\+/g,  // Regex for replacing addition symbol with a space
-        search = /([^&=]+)=?([^&]*)/g,
-        decode = function (s) { return decodeURIComponent(s.replace(pl, " ")); },
-        query  = window.location.search.substring(1);
-
-    urlParams = {};
-    while (match = search.exec(query))
-       urlParams[decode(match[1])] = decode(match[2]);
-})();
-
+var postcard = '';
 function init(){
-	if(urlParams['state'] != null){
+	if(getCookie("postcard") != ""){
+		alert(getCookie("postcard"));
+		postcard = JSON.parse(getCookie("postcard"));
+		setCookie("postcard", "", 1);
+		main(3);
+	}
+	else if(urlParams['state'] != null){
 		main(urlParams(parseInt('state')));
 	}
 	else{
@@ -107,6 +116,7 @@ function main(state){
 		//branch: track amount
 		document.getElementById("donation").className = "display";
 		document.getElementById("showImpact").className = "nodisplay"
+		document.getElementById("shareImpact").className = "nodisplay"
 	}
 	else if(state == 2){
 		var money = parseInt(document.getElementById("amount").value);
@@ -115,24 +125,37 @@ function main(state){
 			return;
 		}
 		document.getElementById("donationAmount").innerHTML = money;
+		document.getElementById("donationURL").href = "https://sandbox.paypal.com/cgi-bin/webscr?cmd=_donations&no_shipping=0&no_note=1&submit=Donate&business=fmulia-us-donate@paypal.com&item_name=A+charitable+donation&amount=" + money + "&currency_code=USD&return=" + encodeURIComponent(window.location)  + "&cancel=" + encodeURIComponent(window.location);
 		document.getElementById("donation").className = "nodisplay"
 		document.getElementById("showImpact").className = "display"
+		document.getElementById("shareImpact").className = "nodisplay"
 		//branch: display postcard and donate links
-		var outputs = getImpacts(money);
-		displayPostcard(outputs);
+		postcard = getImpacts(money);
+		displayPostcard(postcard, 1);
 	}
 	else if(state == 3){
 		//branch: redirect back from paypal and display the link
-		var postcard = buildPostcardContentFromQueryString();
-		displayPostcard(postcard);
+		if(postcard == ''){
+			postcard = buildPostcardContentFromQueryString();
+		}
+		displayPostcard(postcard, 2);
+		var shareLink = buildQueryString(postcard);
 	}
 }
 
-function displayPostcard(contents){
+function displayPostcard(contents, mode){
 	//TODO: display the postcard
+	if(mode == 1){
+		var disp_pre = "impact-";
+		var disp_val = "impactval-";
+	}
+	else{
+		var disp_pre = "impact3-";
+		var disp_val = "impact3val-";
+	}
 	for (var i = contents.length - 1; i >= 0; i--) {
-		document.getElementById("impact-" + contents[i].desc).className = "impacts display"
-		document.getElementById("impactval-" + contents[i].desc).innerHTML = contents[i].num;
+		document.getElementById(disp_pre + contents[i].desc).className = "impacts display"
+		document.getElementById(disp_val + contents[i].desc).innerHTML = contents[i].num;
 	};
 }
 
@@ -148,11 +171,31 @@ function buildPostcardContentFromQueryString(){
 }
 
 function buildQueryString(contents){
-	var string = 'card=';
+	var string = '?state=3&card=';
 	for (var i = contents.length - 1; i >= 0; i--) {
 		string += contents[i].desc + ':' + contents[i].num + ';'; 
 	};
 	return string;
+}
+function startCookie(){
+	setCookie("postcard", JSON.stringify(postcard), 1);
+}
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+d.toGMTString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+} 
+
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0; i<ca.length; i++) {
+        var c = ca[i].trim();
+        if (c.indexOf(name) == 0) return c.substring(name.length,c.length);
+    }
+    return "";
 }
 
 window.onload = setTimeout(init, 500);
