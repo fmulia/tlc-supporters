@@ -438,6 +438,21 @@
 
 /* end show impact */
 
+/* share impact */
+.shareimpactContainer{
+	width: 100%;
+	height: auto;
+	background: #000;
+	position: relative;
+}
+.shareTitle{
+	color: #fff;
+}
+.shareMoreInfo{
+	color: #fff;
+}
+/* end share impact */
+
 </style>
 <script src="/wp-content/plugins/tlc-supporters/views/js/impacts.js"></script>
 <div id="trackImpact">
@@ -487,7 +502,30 @@
 			</div>
 		</div>
 	</div>
-	<div id="cardOptions">
-		
+	<div id="shareImpact">
+		<div class="shareimpactContainer">
+			<div class="shareTitle">I SUPPORTED THIS LIFE CAMBODIA WITH $<span id="donationAmount-1"></span> AND THIS IS WHAT CAN BE ACHIEVED...</div>
+			<div class="impactC">
+				<div class="impacts nodisplay" id="impact3-1"><div id="impact3val-1" class="no2">101</div></div>
+				<div class="impacts nodisplay" id="impact3-2"><div id="impact3val-2" class="number">501</div></div>
+				<div class="impacts nodisplay" id="impact3-3"><div id="impact3val-3" class="no3">101</div></div>
+				<div class="impacts nodisplay" id="impact3-4"><div id="impact3val-4" class="no4">500</div></div>
+				<div class="impacts nodisplay" id="impact3-5"><div id="impact3val-5" class="no5">501</div></div>
+				<div class="impacts nodisplay" id="impact3-6"><div id="impact3val-6" class="no6">301</div></div>
+				<div class="impacts nodisplay" id="impact3-7"><div id="impact3val-7" class="no7">301</div></div>
+				<div class="impacts nodisplay" id="impact3-8"><div id="impact3val-8" class="no8">201</div></div>
+				<div class="impacts nodisplay" id="impact3-9"><div id="impact3val-9" class="no9">201</div></div>
+				<div class="impacts nodisplay" id="impact3-10"><div id="impact3val-10" class="no10">201</div></div>
+				<div class="impacts nodisplay" id="impact3-11"><div id="impact3val-11" class="no11">201</div></div>
+				<div class="impacts nodisplay" id="impact3-12"><div id="impact3val-12" class="no12">201</div></div>
+				<div class="impacts nodisplay" id="impact3-13"><div id="impact3val-13" class="no13">201</div></div>
+				<div class="impacts nodisplay" id="impact3-14"><div id="impact3val-14" class="no14">201</div></div>
+				<div class="impacts nodisplay" id="impact3-15"><div id="impact3val-15" class="no15">201</div></div>
+				<div class="impacts nodisplay" id="impact3-16"><div id="impact3val-16" class="no16">201</div></div>
+				<div class="impacts nodisplay" id="impact3-17"><div id="impact3val-17" class="no17">201</div></div>
+				<div class="impacts nodisplay" id="impact3-18"><div id="impact3val-18" class="no18">201</div></div>
+			</div>
+			<div class="shareMoreInfo">Visit: <a href="www.thislifecambodia.org/donate">www.thislifecambodia.org/donate</a> to #TrackYoutImpact</div>
+		</div>
 	</div>
 </div>
