@@ -96,15 +96,17 @@ function getImpacts(money)
 }
 
 var postcard = '';
+var money = '';
 function init(){
 	if(getCookie("postcard") != ""){
-		alert(getCookie("postcard"));
 		postcard = JSON.parse(getCookie("postcard"));
+		money = getCookie("money");
 		setCookie("postcard", "", 1);
+		setCookie("money", "", 1);
 		main(3);
 	}
 	else if(urlParams['state'] != null){
-		main(urlParams(parseInt('state')));
+		main(parseInt(urlParams['state']));
 	}
 	else{
 		main(1);
@@ -115,11 +117,12 @@ function main(state){
 	if(state == 1){
 		//branch: track amount
 		document.getElementById("donation").className = "display";
-		document.getElementById("showImpact").className = "nodisplay"
-		//document.getElementById("shareImpact").className = "nodisplay"
+		document.getElementById("showImpact").className = "nodisplay";
+		document.getElementById("shareImpact").className = "nodisplay";
 	}
 	else if(state == 2){
-		var money = parseInt(document.getElementById("amount").value);
+		//branch: display postcard and donate links
+		money = parseInt(document.getElementById("amount").value);
 		if(isNaN(money)){
 			alert("Please enter a valid value");
 			return;
@@ -133,8 +136,8 @@ function main(state){
 			"&item_name=" + donationMsg + "&amount=" + money + "&currency_code=USD&return=" + encodeURIComponent(window.location)  + "&cancel=" + encodeURIComponent(window.location);
 		document.getElementById("donation").className = "nodisplay"
 		document.getElementById("showImpact").className = "display"
-		//document.getElementById("shareImpact").className = "nodisplay"
-		//branch: display postcard and donate links
+		document.getElementById("shareImpact").className = "nodisplay"
+		
 		postcard = getImpacts(money);
 		displayPostcard(postcard, 1);
 	}
@@ -143,6 +146,10 @@ function main(state){
 		if(postcard == ''){
 			postcard = buildPostcardContentFromQueryString();
 		}
+		document.getElementById("donationAmount-1").innerHTML = money;
+		document.getElementById("donation").className = "nodisplay";
+		document.getElementById("showImpact").className = "nodisplay";
+		document.getElementById("shareImpact").className = "display";
 		displayPostcard(postcard, 2);
 		var shareLink = buildQueryString(postcard);
 	}
@@ -159,7 +166,7 @@ function displayPostcard(contents, mode){
 		var disp_val = "impact3val-";
 	}
 	for (var i = contents.length - 1; i >= 0; i--) {
-		document.getElementById(disp_pre + contents[i].desc).className = "impacts display"
+		document.getElementById(disp_pre + contents[i].desc).className = "impacts display impact-" + contents[i].desc;
 		document.getElementById(disp_val + contents[i].desc).innerHTML = contents[i].num;
 	};
 }
@@ -184,6 +191,7 @@ function buildQueryString(contents){
 }
 function startCookie(){
 	setCookie("postcard", JSON.stringify(postcard), 1);
+	setCookie("money", '' + money)
 }
 
 function setCookie(cname, cvalue, exdays) {
@@ -203,4 +211,4 @@ function getCookie(cname) {
     return "";
 }
 
-window.onload = setTimeout(init, 500);
+window.onload = setTimeout(init, 1000);

@@ -357,79 +357,79 @@
 	margin: 0 auto;
 	width: 30%;
 }
-#impact-1{
+.impact-1{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-big-ideas.jpg') no-repeat;
 	background-size: 100%;
 }
-#impact-2{
+.impact-2{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-bikes.jpg') no-repeat;
 	background-size: 92%;
 }
-#impact-3{
+.impact-3{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-books.jpg') no-repeat;
 	background-size: 88%;
 }
-#impact-4{
+.impact-4{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-citizens-rights.jpg') no-repeat;
 	background-size: 63%;
 }
-#impact-5{
+.impact-5{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-communities-priorities.jpg') no-repeat;
 	background-size: 87%;
 }
-#impact-6{
+.impact-6{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-community-campaigns.jpg') no-repeat;
 	background-size: 100%;
 }
-#impact-7{
+.impact-7{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-community-consultations.jpg') no-repeat;
 	background-size: 100%;
 }
-#impact-8{
+.impact-8{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-crcp.jpg') no-repeat;
 	background-size: 87%;
 }
-#impact-9{
+.impact-9{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-families.jpg') no-repeat;
 	background-size: 100%;
 	height: 200px;
 }
-#impact-10{
+.impact-10{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-futures.jpg') no-repeat;
 	background-size: 100%;
 }
-#impact-11{
+.impact-11{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-health-care.jpg') no-repeat;
 	background-size: 100%;
 }
-#impact-12{
+.impact-12{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-scholarship.jpg') no-repeat;
 	background-size: 100%;
 	height: 250px;
 }
-#impact-13{
+.impact-13{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-school-community.jpg') no-repeat;
 	background-size: 100%;
 	height: 260px;
 }
-#impact-14{
+.impact-14{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-school-support.jpg') no-repeat;
 	background-size: 95%;
 }
-#impact-15{
+.impact-15{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-self-sustaining.jpg') no-repeat;
 	background-size: 100%;
 }
-#impact-16{
+.impact-16{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-solar-lamp.jpg') no-repeat;
 	background-size: 100%;
 }
-#impact-17{
+.impact-17{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-teachers.jpg') no-repeat;
 	background-size: 100%;
 	height: 250px;
 }
-#impact-18{
+.impact-18{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-tool-kits.jpg') no-repeat;
 	background-size: 100%;
 	height: 260px;
@@ -477,28 +477,28 @@
 	<div id="showImpact">
 		<div class="impactContainer">
 			<div class="amountC">
-				IN 1 MONTTH IN A TLC COMMUNITY. $<span id="donationAmount"></span> CAN ENABLE...
+				IN 1 MONTH IN A TLC COMMUNITY. $<span id="donationAmount"></span> CAN ENABLE...
 				<a href="" id="donationURL" class="buttons-1" onclick="startCookie()">LET'S DO IT!</a>
 			</div>
 			<div class="impactC">
-				<div class="impacts nodisplay" id="impact-1"><div id="impactval-1" class="no2">101</div></div>
-				<div class="impacts nodisplay" id="impact-2"><div id="impactval-2" class="number">501</div></div>
-				<div class="impacts nodisplay" id="impact-3"><div id="impactval-3" class="no3">101</div></div>
-				<div class="impacts nodisplay" id="impact-4"><div id="impactval-4" class="no4">500</div></div>
-				<div class="impacts nodisplay" id="impact-5"><div id="impactval-5" class="no5">501</div></div>
-				<div class="impacts nodisplay" id="impact-6"><div id="impactval-6" class="no6">301</div></div>
-				<div class="impacts nodisplay" id="impact-7"><div id="impactval-7" class="no7">301</div></div>
-				<div class="impacts nodisplay" id="impact-8"><div id="impactval-8" class="no8">201</div></div>
-				<div class="impacts nodisplay" id="impact-9"><div id="impactval-9" class="no9">201</div></div>
-				<div class="impacts nodisplay" id="impact-10"><div id="impactval-10" class="no10">201</div></div>
-				<div class="impacts nodisplay" id="impact-11"><div id="impactval-11" class="no11">201</div></div>
-				<div class="impacts nodisplay" id="impact-12"><div id="impactval-12" class="no12">201</div></div>
-				<div class="impacts nodisplay" id="impact-13"><div id="impactval-13" class="no13">201</div></div>
-				<div class="impacts nodisplay" id="impact-14"><div id="impactval-14" class="no14">201</div></div>
-				<div class="impacts nodisplay" id="impact-15"><div id="impactval-15" class="no15">201</div></div>
-				<div class="impacts nodisplay" id="impact-16"><div id="impactval-16" class="no16">201</div></div>
-				<div class="impacts nodisplay" id="impact-17"><div id="impactval-17" class="no17">201</div></div>
-				<div class="impacts nodisplay" id="impact-18"><div id="impactval-18" class="no18">201</div></div>
+				<div class="impacts nodisplay impact-1" id="impact-1"><div id="impactval-1" class="no2">101</div></div>
+				<div class="impacts nodisplay impact-2" id="impact-2"><div id="impactval-2" class="number">501</div></div>
+				<div class="impacts nodisplay impact-3" id="impact-3"><div id="impactval-3" class="no3">101</div></div>
+				<div class="impacts nodisplay impact-4" id="impact-4"><div id="impactval-4" class="no4">500</div></div>
+				<div class="impacts nodisplay impact-5" id="impact-5"><div id="impactval-5" class="no5">501</div></div>
+				<div class="impacts nodisplay impact-6" id="impact-6"><div id="impactval-6" class="no6">301</div></div>
+				<div class="impacts nodisplay impact-7" id="impact-7"><div id="impactval-7" class="no7">301</div></div>
+				<div class="impacts nodisplay impact-8" id="impact-8"><div id="impactval-8" class="no8">201</div></div>
+				<div class="impacts nodisplay impact-9" id="impact-9"><div id="impactval-9" class="no9">201</div></div>
+				<div class="impacts nodisplay impact-10" id="impact-10"><div id="impactval-10" class="no10">201</div></div>
+				<div class="impacts nodisplay impact-11" id="impact-11"><div id="impactval-11" class="no11">201</div></div>
+				<div class="impacts nodisplay impact-12" id="impact-12"><div id="impactval-12" class="no12">201</div></div>
+				<div class="impacts nodisplay impact-13" id="impact-13"><div id="impactval-13" class="no13">201</div></div>
+				<div class="impacts nodisplay impact-14" id="impact-14"><div id="impactval-14" class="no14">201</div></div>
+				<div class="impacts nodisplay impact-15" id="impact-15"><div id="impactval-15" class="no15">201</div></div>
+				<div class="impacts nodisplay impact-16" id="impact-16"><div id="impactval-16" class="no16">201</div></div>
+				<div class="impacts nodisplay impact-17" id="impact-17"><div id="impactval-17" class="no17">201</div></div>
+				<div class="impacts nodisplay impact-18" id="impact-18"><div id="impactval-18" class="no18">201</div></div>
 			</div>
 		</div>
 	</div>
@@ -506,24 +506,24 @@
 		<div class="shareimpactContainer">
 			<div class="shareTitle">I SUPPORTED THIS LIFE CAMBODIA WITH $<span id="donationAmount-1"></span> AND THIS IS WHAT CAN BE ACHIEVED...</div>
 			<div class="impactC">
-				<div class="impacts nodisplay" id="impact3-1"><div id="impact3val-1" class="no2">101</div></div>
-				<div class="impacts nodisplay" id="impact3-2"><div id="impact3val-2" class="number">501</div></div>
-				<div class="impacts nodisplay" id="impact3-3"><div id="impact3val-3" class="no3">101</div></div>
-				<div class="impacts nodisplay" id="impact3-4"><div id="impact3val-4" class="no4">500</div></div>
-				<div class="impacts nodisplay" id="impact3-5"><div id="impact3val-5" class="no5">501</div></div>
-				<div class="impacts nodisplay" id="impact3-6"><div id="impact3val-6" class="no6">301</div></div>
-				<div class="impacts nodisplay" id="impact3-7"><div id="impact3val-7" class="no7">301</div></div>
-				<div class="impacts nodisplay" id="impact3-8"><div id="impact3val-8" class="no8">201</div></div>
-				<div class="impacts nodisplay" id="impact3-9"><div id="impact3val-9" class="no9">201</div></div>
-				<div class="impacts nodisplay" id="impact3-10"><div id="impact3val-10" class="no10">201</div></div>
-				<div class="impacts nodisplay" id="impact3-11"><div id="impact3val-11" class="no11">201</div></div>
-				<div class="impacts nodisplay" id="impact3-12"><div id="impact3val-12" class="no12">201</div></div>
-				<div class="impacts nodisplay" id="impact3-13"><div id="impact3val-13" class="no13">201</div></div>
-				<div class="impacts nodisplay" id="impact3-14"><div id="impact3val-14" class="no14">201</div></div>
-				<div class="impacts nodisplay" id="impact3-15"><div id="impact3val-15" class="no15">201</div></div>
-				<div class="impacts nodisplay" id="impact3-16"><div id="impact3val-16" class="no16">201</div></div>
-				<div class="impacts nodisplay" id="impact3-17"><div id="impact3val-17" class="no17">201</div></div>
-				<div class="impacts nodisplay" id="impact3-18"><div id="impact3val-18" class="no18">201</div></div>
+				<div class="impacts nodisplay impact-1" id="impact3-1"><div id="impact3val-1" class="no2">101</div></div>
+				<div class="impacts nodisplay impact-2" id="impact3-2"><div id="impact3val-2" class="number">501</div></div>
+				<div class="impacts nodisplay impact-3" id="impact3-3"><div id="impact3val-3" class="no3">101</div></div>
+				<div class="impacts nodisplay impact-4" id="impact3-4"><div id="impact3val-4" class="no4">500</div></div>
+				<div class="impacts nodisplay impact-5" id="impact3-5"><div id="impact3val-5" class="no5">501</div></div>
+				<div class="impacts nodisplay impact-6" id="impact3-6"><div id="impact3val-6" class="no6">301</div></div>
+				<div class="impacts nodisplay impact-7" id="impact3-7"><div id="impact3val-7" class="no7">301</div></div>
+				<div class="impacts nodisplay impact-8" id="impact3-8"><div id="impact3val-8" class="no8">201</div></div>
+				<div class="impacts nodisplay impact-9" id="impact3-9"><div id="impact3val-9" class="no9">201</div></div>
+				<div class="impacts nodisplay impact-10" id="impact3-10"><div id="impact3val-10" class="no10">201</div></div>
+				<div class="impacts nodisplay impact-11" id="impact3-11"><div id="impact3val-11" class="no11">201</div></div>
+				<div class="impacts nodisplay impact-12" id="impact3-12"><div id="impact3val-12" class="no12">201</div></div>
+				<div class="impacts nodisplay impact-13" id="impact3-13"><div id="impact3val-13" class="no13">201</div></div>
+				<div class="impacts nodisplay impact-14" id="impact3-14"><div id="impact3val-14" class="no14">201</div></div>
+				<div class="impacts nodisplay impact-15" id="impact3-15"><div id="impact3val-15" class="no15">201</div></div>
+				<div class="impacts nodisplay impact-16" id="impact3-16"><div id="impact3val-16" class="no16">201</div></div>
+				<div class="impacts nodisplay impact-17" id="impact3-17"><div id="impact3val-17" class="no17">201</div></div>
+				<div class="impacts nodisplay impact-18" id="impact3-18"><div id="impact3val-18" class="no18">201</div></div>
 			</div>
 			<div class="shareMoreInfo">Visit: <a href="www.thislifecambodia.org/donate">www.thislifecambodia.org/donate</a> to #TrackYoutImpact</div>
 		</div>
