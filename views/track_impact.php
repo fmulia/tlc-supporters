@@ -1,5 +1,11 @@
 <style type="text/css">
 /* track impact */
+.display{
+	display: inline-block;
+}
+.nodisplay{
+	display: none;
+}
 .donateContainer{
 	width: 100%;
 	height: auto;
@@ -445,7 +451,7 @@
 			<!-- <a href="" class="buttons-1">LET'S DO IT!</a>
 			<a href="" class="buttons-2">MAKE IT MONTHLY</a> -->
 
-			 <a href="" class="buttons-1">SHOW ME</a>
+			 <a href="#" class="buttons-1" onclick="main(2);">SHOW ME</a>
 
 		</div>
 		<p class="descr">
@@ -460,24 +466,27 @@
 				<a href="" class="buttons-1">LET'S DO IT!</a>
 			</div>
 			<div class="impactC">
-				<div class="impacts" id="impact-1"><div class="no2">101</div></div>
-				<div class="impacts" id="impact-2"><div class="number">501</div></div>
-				<div class="impacts" id="impact-3"><div class="no3">101</div></div>
-				<div class="impacts" id="impact-4"><div class="no4">500</div></div>
-				<div class="impacts" id="impact-5"><div class="no5">501</div></div>
-				<div class="impacts" id="impact-6"><div class="no6">301</div></div>
-				<div class="impacts" id="impact-7"><div class="no7">301</div></div>
-				<div class="impacts" id="impact-8"><div class="no8">201</div></div>
-				<div class="impacts" id="impact-9"><div class="no9">201</div></div>
-				<div class="impacts" id="impact-10"><div class="no10">201</div></div>
-				<div class="impacts" id="impact-11"><div class="no11">201</div></div>
-				<div class="impacts" id="impact-12"><div class="no12">201</div></div>
-				<div class="impacts" id="impact-13"><div class="no13">201</div></div>
-				<div class="impacts" id="impact-14"><div class="no14">201</div></div>
-				<div class="impacts" id="impact-15"><div class="no15">201</div></div>
-				<div class="impacts" id="impact-16"><div class="no16">201</div></div>
-				<div class="impacts" id="impact-17"><div class="no17">201</div></div>
-				<div class="impacts" id="impact-18"><div class="no18">201</div></div>
+				<div class="impacts nodisplay" id="impact-1"><div class="no2">101</div></div>
+				<div class="impacts nodisplay" id="impact-2"><div class="number">502</div></div>
+				<div class="impacts nodisplay" id="impact-3"><div class="no3">101</div></div>
+				<div class="impacts nodisplay" id="impact-1"><div class="no2">101</div></div>
+				<div class="impacts nodisplay" id="impact-2"><div class="number">501</div></div>
+				<div class="impacts nodisplay" id="impact-3"><div class="no3">101</div></div>
+				<div class="impacts nodisplay" id="impact-4"><div class="no4">500</div></div>
+				<div class="impacts nodisplay" id="impact-5"><div class="no5">501</div></div>
+				<div class="impacts nodisplay" id="impact-6"><div class="no6">301</div></div>
+				<div class="impacts nodisplay" id="impact-7"><div class="no7">301</div></div>
+				<div class="impacts nodisplay" id="impact-8"><div class="no8">201</div></div>
+				<div class="impacts nodisplay" id="impact-9"><div class="no9">201</div></div>
+				<div class="impacts nodisplay" id="impact-10"><div class="no10">201</div></div>
+				<div class="impacts nodisplay" id="impact-11"><div class="no11">201</div></div>
+				<div class="impacts nodisplay" id="impact-12"><div class="no12">201</div></div>
+				<div class="impacts nodisplay" id="impact-13"><div class="no13">201</div></div>
+				<div class="impacts nodisplay" id="impact-14"><div class="no14">201</div></div>
+				<div class="impacts nodisplay" id="impact-15"><div class="no15">201</div></div>
+				<div class="impacts nodisplay" id="impact-16"><div class="no16">201</div></div>
+				<div class="impacts nodisplay" id="impact-17"><div class="no17">201</div></div>
+				<div class="impacts nodisplay" id="impact-18"><div class="no18">201</div></div>
 			</div>
 		</div>
 	</div>

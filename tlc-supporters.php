@@ -11,7 +11,7 @@
  * Text Domain: TLC Supporters
  */
 
-require_once 'wp-content/plugins/tlc-supporters/lib/MCAPI.class.php';
+require_once 'lib/MCAPI.class.php';
 
 define(PAYPAL_IPN_ACTION, 1);
 global $wp;
