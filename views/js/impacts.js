@@ -116,7 +116,7 @@ function main(state){
 		//branch: track amount
 		document.getElementById("donation").className = "display";
 		document.getElementById("showImpact").className = "nodisplay"
-		document.getElementById("shareImpact").className = "nodisplay"
+		//document.getElementById("shareImpact").className = "nodisplay"
 	}
 	else if(state == 2){
 		var money = parseInt(document.getElementById("amount").value);
@@ -128,7 +128,7 @@ function main(state){
 		document.getElementById("donationURL").href = "https://sandbox.paypal.com/cgi-bin/webscr?cmd=_donations&no_shipping=0&no_note=1&submit=Donate&business=fmulia-us-donate@paypal.com&item_name=A+charitable+donation&amount=" + money + "&currency_code=USD&return=" + encodeURIComponent(window.location)  + "&cancel=" + encodeURIComponent(window.location);
 		document.getElementById("donation").className = "nodisplay"
 		document.getElementById("showImpact").className = "display"
-		document.getElementById("shareImpact").className = "nodisplay"
+		//document.getElementById("shareImpact").className = "nodisplay"
 		//branch: display postcard and donate links
 		postcard = getImpacts(money);
 		displayPostcard(postcard, 1);
