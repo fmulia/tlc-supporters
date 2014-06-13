@@ -462,7 +462,7 @@
 	<div id="showImpact">
 		<div class="impactContainer">
 			<div class="amountC">
-				IN 1 MONTTH IN A TLC COMMUNITY. $100 CAN ENABLE...
+				IN 1 MONTTH IN A TLC COMMUNITY. $<span id="donationAmount"></span> CAN ENABLE...
 				<a href="" class="buttons-1">LET'S DO IT!</a>
 			</div>
 			<div class="impactC">

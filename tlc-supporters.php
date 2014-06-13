@@ -100,13 +100,12 @@ class tlcSupporters{
 	}
 
 	private function paypal_ipn_mailchimp(){
-		//add $_POST['payer_email'] to mailchimp
 		$mcapikey = 'e052d15ae7d0ceafaa09ae9e13d30750-us2';
 		$listId = '9451f48648'; //list ID to subscribe to
 		$mcapi = new MCAPI($mcapikey);
 		$merge_vars = array('');
 		//pass the payer email address to $payer_email
-		$retval = $mcapi->listSubscribe( $listId, $payer_email, $merge_vars, 'html', false, false, true, true );
+		$retval = $mcapi->listSubscribe( $listId, $_POST['payer_email'], $merge_vars, 'html', false, false, true, true );
 		if ($mcapi->errorCode){
 			//do something if there is subscription error
 		} 

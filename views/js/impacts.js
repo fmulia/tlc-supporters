@@ -114,6 +114,7 @@ function main(state){
 			alert("Please enter a valid value");
 			return;
 		}
+		document.getElementById("donationAmount").innerHTML = money;
 		document.getElementById("donation").className = "nodisplay"
 		document.getElementById("showImpact").className = "display"
 		//branch: display postcard and donate links
