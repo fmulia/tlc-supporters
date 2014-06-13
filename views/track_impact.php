@@ -120,12 +120,12 @@
 .impacts .number{
 	color: #fff;
 	position: absolute;
-	right: 43px;
-	top: 9px;
+	right: 42px;
+	top: 11px;
 	font-size: 40px;
-	transform: rotate(5deg);
-	-ms-transform: rotate(5deg);
-	-webkit-transform: rotate(5deg);
+	transform: rotate(4deg);
+	-ms-transform: rotate(4deg);
+	-webkit-transform: rotate(4deg);
 	text-align: center;
 	margin: 0 auto;
 	width: 30%;
@@ -149,9 +149,204 @@
 	left: 30px;
 	top: 17px;
 	font-size: 45px;
+	transform: rotate(-8deg);
+	-ms-transform: rotate(-8deg);
+	-webkit-transform: rotate(-8deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.no4{
+	color: #fff;
+	position: absolute;
+	left: 54px;
+	top: 11px;
+	font-size: 32px;
 	transform: rotate(8deg);
 	-ms-transform: rotate(8deg);
-	-webkit-transform: rotate(-8deg);
+	-webkit-transform: rotate(8deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.no5{
+	color: #fff;
+	position: absolute;
+	right: 55px;
+	top: 11px;
+	font-size: 42px;
+	transform: rotate(8deg);
+	-ms-transform: rotate(8deg);
+	-webkit-transform: rotate(8deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.no6{
+	color: #fff;
+	position: absolute;
+	right: 63px;
+	top: 7px;
+	font-size: 40px;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.no7{
+	color: #fff;
+	position: absolute;
+	right: 16px;
+	top: 10px;
+	font-size: 42px;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.no8{
+	color: #fff;
+	position: absolute;
+	right: 44px;
+	top: 10px;
+	font-size: 32px;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.no9{
+	color: #fff;
+	position: absolute;
+	right: 5px;
+	top: 41px;
+	font-size: 35px;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.no10{
+	color: #fff;
+	position: absolute;
+	right: 14px;
+	top: 8px;
+	font-size: 42px;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.no11{
+	color: #fff;
+	position: absolute;
+	right: 21px;
+	top: 15px;
+	font-size: 42px;
+	transform: rotate(9deg);
+	-ms-transform: rotate(9deg);
+	-webkit-transform: rotate(9deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.no12{
+	color: #fff;
+	position: absolute;
+	right: 24px;
+	top: 15px;
+	font-size: 46px;
+	transform: rotate(8deg);
+	-ms-transform: rotate(8deg);
+	-webkit-transform: rotate(8deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.no13{
+	color: #fff;
+	position: absolute;
+	right: 11px;
+	top: 9px;
+	font-size: 34px;
+	transform: rotate(9deg);
+	-ms-transform: rotate(9deg);
+	-webkit-transform: rotate(9deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.no14{
+	color: #fff;
+	position: absolute;
+	right: 35px;
+	top: 10px;
+	font-size: 44px;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.no15{
+	color: #fff;
+	position: absolute;
+	right: 24px;
+	top: 12px;
+	font-size: 49px;
+	transform: rotate(13deg);
+	-ms-transform: rotate(13deg);
+	-webkit-transform: rotate(13deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.no16{
+	color: #fff;
+	position: absolute;
+	right: 11px;
+	top: 127px;
+	font-size: 40px;
+	transform: rotate(8deg);
+	-ms-transform: rotate(8deg);
+	-webkit-transform: rotate(8deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.no17{
+	color: #fff;
+	position: absolute;
+	right: 75px;
+	bottom: 65px;
+	font-size: 40px;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.no18{
+	color: #fff;
+	position: absolute;
+	right: 17px;
+	top: 34px;
+	font-size: 42px;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
 	text-align: center;
 	margin: 0 auto;
 	width: 30%;
@@ -167,6 +362,71 @@
 #impact-3{
 	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-books.jpg') no-repeat;
 	background-size: 88%;
+}
+#impact-4{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-citizens-rights.jpg') no-repeat;
+	background-size: 63%;
+}
+#impact-5{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-communities-priorities.jpg') no-repeat;
+	background-size: 87%;
+}
+#impact-6{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-community-campaigns.jpg') no-repeat;
+	background-size: 100%;
+}
+#impact-7{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-community-consultations.jpg') no-repeat;
+	background-size: 100%;
+}
+#impact-8{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-crcp.jpg') no-repeat;
+	background-size: 87%;
+}
+#impact-9{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-families.jpg') no-repeat;
+	background-size: 100%;
+	height: 200px;
+}
+#impact-10{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-futures.jpg') no-repeat;
+	background-size: 100%;
+}
+#impact-11{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-health-care.jpg') no-repeat;
+	background-size: 100%;
+}
+#impact-12{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-scholarship.jpg') no-repeat;
+	background-size: 100%;
+	height: 250px;
+}
+#impact-13{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-school-community.jpg') no-repeat;
+	background-size: 100%;
+	height: 260px;
+}
+#impact-14{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-school-support.jpg') no-repeat;
+	background-size: 95%;
+}
+#impact-15{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-self-sustaining.jpg') no-repeat;
+	background-size: 100%;
+}
+#impact-16{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-solar-lamp.jpg') no-repeat;
+	background-size: 100%;
+}
+#impact-17{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-teachers.jpg') no-repeat;
+	background-size: 100%;
+	height: 250px;
+}
+#impact-18{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-tool-kits.jpg') no-repeat;
+	background-size: 100%;
+	height: 260px;
 }
 
 
@@ -201,8 +461,23 @@
 			</div>
 			<div class="impactC">
 				<div class="impacts" id="impact-1"><div class="no2">101</div></div>
-				<div class="impacts" id="impact-2"><div class="number">502</div></div>
+				<div class="impacts" id="impact-2"><div class="number">501</div></div>
 				<div class="impacts" id="impact-3"><div class="no3">101</div></div>
+				<div class="impacts" id="impact-4"><div class="no4">500</div></div>
+				<div class="impacts" id="impact-5"><div class="no5">501</div></div>
+				<div class="impacts" id="impact-6"><div class="no6">301</div></div>
+				<div class="impacts" id="impact-7"><div class="no7">301</div></div>
+				<div class="impacts" id="impact-8"><div class="no8">201</div></div>
+				<div class="impacts" id="impact-9"><div class="no9">201</div></div>
+				<div class="impacts" id="impact-10"><div class="no10">201</div></div>
+				<div class="impacts" id="impact-11"><div class="no11">201</div></div>
+				<div class="impacts" id="impact-12"><div class="no12">201</div></div>
+				<div class="impacts" id="impact-13"><div class="no13">201</div></div>
+				<div class="impacts" id="impact-14"><div class="no14">201</div></div>
+				<div class="impacts" id="impact-15"><div class="no15">201</div></div>
+				<div class="impacts" id="impact-16"><div class="no16">201</div></div>
+				<div class="impacts" id="impact-17"><div class="no17">201</div></div>
+				<div class="impacts" id="impact-18"><div class="no18">201</div></div>
 			</div>
 		</div>
 	</div>
