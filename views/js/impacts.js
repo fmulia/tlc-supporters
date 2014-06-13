@@ -124,8 +124,13 @@ function main(state){
 			alert("Please enter a valid value");
 			return;
 		}
+		var siteStr = "sandbox";
+		var emailAddr = "fmulia-us-donate@paypal.com";
+		var donationMsg = "Donation+for+This+Life+Cambodia"
 		document.getElementById("donationAmount").innerHTML = money;
-		document.getElementById("donationURL").href = "https://sandbox.paypal.com/cgi-bin/webscr?cmd=_donations&no_shipping=0&no_note=1&submit=Donate&business=fmulia-us-donate@paypal.com&item_name=A+charitable+donation&amount=" + money + "&currency_code=USD&return=" + encodeURIComponent(window.location)  + "&cancel=" + encodeURIComponent(window.location);
+		document.getElementById("donationURL").href = "https://" + siteStr + 
+			".paypal.com/cgi-bin/webscr?cmd=_donations&no_shipping=0&no_note=1&submit=Donate&business=" + emailAddr + 
+			"&item_name=" + donationMsg + "&amount=" + money + "&currency_code=USD&return=" + encodeURIComponent(window.location)  + "&cancel=" + encodeURIComponent(window.location);
 		document.getElementById("donation").className = "nodisplay"
 		document.getElementById("showImpact").className = "display"
 		//document.getElementById("shareImpact").className = "nodisplay"
