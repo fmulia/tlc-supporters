@@ -776,6 +776,36 @@
 	background-size: 100%;
 	height: 180px;
 }
+.shareICons{
+	background: #000;
+	margin: 10px 0;
+	text-align: center;
+}
+.shareICons ul{
+	list-style: none;
+	margin:0;
+}
+.shareICons ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 20px;
+	margin: 35px 0px 0px 0;
+}
+.card{
+	background: url('/wp-content/plugins/tlc-supporters/images/icon-card.jpg') no-repeat;
+	background-size: 100%;
+	padding:40px;
+}
+.print{
+	background: url('/wp-content/plugins/tlc-supporters/images/icon-print.jpg') no-repeat;
+	background-size: 100%;
+	padding:40px;
+}
+.share{
+	background: url('/wp-content/plugins/tlc-supporters/images/icon-share.jpg') no-repeat;
+	background-size: 100%;
+	padding:40px;
+}
 /* end share impact */
 
 </style>
@@ -851,6 +881,12 @@
 				<div class="shareimpacts nodisplay shareimpact-18" id="impact3-18"><div id="impact3val-18" class="no18">201</div></div>
 			</div>
 			<div class="shareMoreInfo">Visit: <a href="www.thislifecambodia.org/donate">www.thislifecambodia.org/donate</a> to #TrackYoutImpact</div>
+			<div class="shareICons">
+				<ul>
+					<li><a href="" class="card"></a></li>
+					<li><a href="" class="print"></a></li>
+					<li><a href="" class="share"></a></li>
+				</ul></div>
 		</div>
 	</div>
 </div>
