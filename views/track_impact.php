@@ -442,14 +442,339 @@
 .shareimpactContainer{
 	width: 100%;
 	height: auto;
-	background: #000;
+	background: #fff;
+	color: #000;
 	position: relative;
 }
 .shareTitle{
-	color: #fff;
+	color: #000;
+	font-weight: bold;
+	margin-bottom: 15px;
 }
 .shareMoreInfo{
+	color: #000;
+	clear: both;
+}
+.shareimpacts{
+	width: 50%;
+	background: #f5f5f5;
+	border:1px solid #fff;
+	height: 200px;
+	width: 200px;
+	float: left;
+	position: relative;
+}
+.shareimpacts .number{
 	color: #fff;
+	position: absolute;
+	right: 27px;
+	top: 7px;
+	font-size: 27px;
+	transform: rotate(4deg);
+	-ms-transform: rotate(4deg);
+	-webkit-transform: rotate(4deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpacts .no2{
+	color: #fff;
+	position: absolute;
+	right: 53px;
+	bottom: 33px;
+	font-size: 20px;
+	transform: rotate(10deg);
+	-ms-transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpacts .no3{
+	color: #fff;
+	position: absolute;
+	left: 21px;
+	top: 6px;
+	font-size: 35px;
+	transform: rotate(-8deg);
+	-ms-transform: rotate(-8deg);
+	-webkit-transform: rotate(-8deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpacts .no4{
+	color: #fff;
+	position: absolute;
+	left: 36px;
+	top: 9px;
+	font-size: 20px;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpacts .no5{
+	color: #fff;
+	position: absolute;
+	right: 37px;
+	top: 8px;
+	font-size: 27px;
+	transform: rotate(8deg);
+	-ms-transform: rotate(8deg);
+	-webkit-transform: rotate(8deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpacts .no6{
+	color: #fff;
+	position: absolute;
+	right: 42px;
+	top: 7px;
+	font-size: 24px;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpacts .no7{
+	color: #fff;
+	position: absolute;
+	right: 11px;
+	top: 9px;
+	font-size: 25px;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpacts .no8{
+	color: #fff;
+	position: absolute;
+	right: 29px;
+	top: 6px;
+	font-size: 21px;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpacts .no9{
+	color: #fff;
+	position: absolute;
+	right: 3px;
+	top: 29px;
+	font-size: 22px;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpacts .no10{
+	color: #fff;
+	position: absolute;
+	right: 19px;
+	top: 7px;
+	font-size: 24px;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpacts .no11{
+	color: #fff;
+	position: absolute;
+	right: 15px;
+	top: 9px;
+	font-size: 28px;
+	transform: rotate(9deg);
+	-ms-transform: rotate(9deg);
+	-webkit-transform: rotate(9deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpacts .no12{
+	color: #fff;
+	position: absolute;
+	right: 18px;
+	top: 10px;
+	font-size: 30px;
+	transform: rotate(8deg);
+	-ms-transform: rotate(8deg);
+	-webkit-transform: rotate(8deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpacts .no13{
+	color: #fff;
+	position: absolute;
+	right: 7px;
+	top: 9px;
+	font-size: 20px;
+	transform: rotate(9deg);
+	-ms-transform: rotate(9deg);
+	-webkit-transform: rotate(9deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpacts .no14{
+	color: #fff;
+	position: absolute;
+	right: 23px;
+	top: 10px;
+	font-size: 25px;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpacts .no15{
+	color: #fff;
+	position: absolute;
+	right: 15px;
+	top: 12px;
+	font-size: 27px;
+	transform: rotate(13deg);
+	-ms-transform: rotate(13deg);
+	-webkit-transform: rotate(13deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpacts .no16{
+	color: #fff;
+	position: absolute;
+	right: 9px;
+	top: 86px;
+	font-size: 25px;
+	transform: rotate(8deg);
+	-ms-transform: rotate(8deg);
+	-webkit-transform: rotate(8deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpacts .no17{
+	color: #fff;
+	position: absolute;
+	right: 50px;
+	bottom: 41px;
+	font-size: 22px;
+	transform: rotate(9deg);
+	-ms-transform: rotate(9deg);
+	-webkit-transform: rotate(9deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpacts .no18{
+	color: #fff;
+	position: absolute;
+	right: 11px;
+	top: 25px;
+	font-size: 26px;
+	transform: rotate(7deg);
+	-ms-transform: rotate(7deg);
+	-webkit-transform: rotate(7deg);
+	text-align: center;
+	margin: 0 auto;
+	width: 30%;
+}
+.shareimpact-1{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-big-ideas.jpg') no-repeat;
+	background-size: 100%;
+	height: 166px;
+}
+.shareimpact-2{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-bikes.jpg') no-repeat;
+	background-size: 92%;
+}
+.shareimpact-3{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-books.jpg') no-repeat;
+	background-size: 88%;
+}
+.shareimpact-4{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-citizens-rights.jpg') no-repeat;
+	background-size: 63%;
+}
+.shareimpact-5{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-communities-priorities.jpg') no-repeat;
+	background-size: 87%;
+}
+.shareimpact-6{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-community-campaigns.jpg') no-repeat;
+	background-size: 100%;
+}
+.shareimpact-7{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-community-consultations.jpg') no-repeat;
+	background-size: 100%;
+}
+.shareimpact-8{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-crcp.jpg') no-repeat;
+	background-size: 87%;
+}
+.shareimpact-9{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-families.jpg') no-repeat;
+	background-size: 100%;
+	height: 130px;
+}
+.shareimpact-10{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-futures.jpg') no-repeat;
+	background-size: 100%;
+}
+.shareimpact-11{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-health-care.jpg') no-repeat;
+	background-size: 100%;
+}
+.shareimpact-12{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-scholarship.jpg') no-repeat;
+	background-size: 100%;
+	height: 200px;
+}
+.shareimpact-13{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-school-community.jpg') no-repeat;
+	background-size: 100%;
+	height: 180px;
+}
+.shareimpact-14{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-school-support.jpg') no-repeat;
+	background-size: 95%;
+}
+.shareimpact-15{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-self-sustaining.jpg') no-repeat;
+	background-size: 100%;
+}
+.shareimpact-16{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-solar-lamp.jpg') no-repeat;
+	background-size: 100%;
+}
+.shareimpact-17{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-teachers.jpg') no-repeat;
+	background-size: 100%;
+	height: 160px;
+}
+.shareimpact-18{
+	background: url('/wp-content/plugins/tlc-supporters/images/icons-impacts/icon-tool-kits.jpg') no-repeat;
+	background-size: 100%;
+	height: 180px;
 }
 /* end share impact */
 
@@ -506,24 +831,24 @@
 		<div class="shareimpactContainer">
 			<div class="shareTitle">I SUPPORTED THIS LIFE CAMBODIA WITH $<span id="donationAmount-1"></span> AND THIS IS WHAT CAN BE ACHIEVED...</div>
 			<div class="impactC">
-				<div class="impacts nodisplay impact-1" id="impact3-1"><div id="impact3val-1" class="no2">101</div></div>
-				<div class="impacts nodisplay impact-2" id="impact3-2"><div id="impact3val-2" class="number">501</div></div>
-				<div class="impacts nodisplay impact-3" id="impact3-3"><div id="impact3val-3" class="no3">101</div></div>
-				<div class="impacts nodisplay impact-4" id="impact3-4"><div id="impact3val-4" class="no4">500</div></div>
-				<div class="impacts nodisplay impact-5" id="impact3-5"><div id="impact3val-5" class="no5">501</div></div>
-				<div class="impacts nodisplay impact-6" id="impact3-6"><div id="impact3val-6" class="no6">301</div></div>
-				<div class="impacts nodisplay impact-7" id="impact3-7"><div id="impact3val-7" class="no7">301</div></div>
-				<div class="impacts nodisplay impact-8" id="impact3-8"><div id="impact3val-8" class="no8">201</div></div>
-				<div class="impacts nodisplay impact-9" id="impact3-9"><div id="impact3val-9" class="no9">201</div></div>
-				<div class="impacts nodisplay impact-10" id="impact3-10"><div id="impact3val-10" class="no10">201</div></div>
-				<div class="impacts nodisplay impact-11" id="impact3-11"><div id="impact3val-11" class="no11">201</div></div>
-				<div class="impacts nodisplay impact-12" id="impact3-12"><div id="impact3val-12" class="no12">201</div></div>
-				<div class="impacts nodisplay impact-13" id="impact3-13"><div id="impact3val-13" class="no13">201</div></div>
-				<div class="impacts nodisplay impact-14" id="impact3-14"><div id="impact3val-14" class="no14">201</div></div>
-				<div class="impacts nodisplay impact-15" id="impact3-15"><div id="impact3val-15" class="no15">201</div></div>
-				<div class="impacts nodisplay impact-16" id="impact3-16"><div id="impact3val-16" class="no16">201</div></div>
-				<div class="impacts nodisplay impact-17" id="impact3-17"><div id="impact3val-17" class="no17">201</div></div>
-				<div class="impacts nodisplay impact-18" id="impact3-18"><div id="impact3val-18" class="no18">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-1" id="impact3-1"><div id="impact3val-1" class="no2">101</div></div>
+				<div class="shareimpacts nodisplay shareimpact-2" id="impact3-2"><div id="impact3val-2" class="number">501</div></div>
+				<div class="shareimpacts nodisplay shareimpact-3" id="impact3-3"><div id="impact3val-3" class="no3">101</div></div>
+				<div class="shareimpacts nodisplay shareimpact-4" id="impact3-4"><div id="impact3val-4" class="no4">500</div></div>
+				<div class="shareimpacts nodisplay shareimpact-5" id="impact3-5"><div id="impact3val-5" class="no5">501</div></div>
+				<div class="shareimpacts nodisplay shareimpact-6" id="impact3-6"><div id="impact3val-6" class="no6">301</div></div>
+				<div class="shareimpacts nodisplay shareimpact-7" id="impact3-7"><div id="impact3val-7" class="no7">301</div></div>
+				<div class="shareimpacts nodisplay shareimpact-8" id="impact3-8"><div id="impact3val-8" class="no8">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-9" id="impact3-9"><div id="impact3val-9" class="no9">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-10" id="impact3-10"><div id="impact3val-10" class="no10">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-11" id="impact3-11"><div id="impact3val-11" class="no11">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-12" id="impact3-12"><div id="impact3val-12" class="no12">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-13" id="impact3-13"><div id="impact3val-13" class="no13">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-14" id="impact3-14"><div id="impact3val-14" class="no14">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-15" id="impact3-15"><div id="impact3val-15" class="no15">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-16" id="impact3-16"><div id="impact3val-16" class="no16">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-17" id="impact3-17"><div id="impact3val-17" class="no17">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-18" id="impact3-18"><div id="impact3val-18" class="no18">201</div></div>
 			</div>
 			<div class="shareMoreInfo">Visit: <a href="www.thislifecambodia.org/donate">www.thislifecambodia.org/donate</a> to #TrackYoutImpact</div>
 		</div>

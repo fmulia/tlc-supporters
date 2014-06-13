@@ -152,6 +152,7 @@ function main(state){
 		document.getElementById("shareImpact").className = "display";
 		displayPostcard(postcard, 2);
 		var shareLink = buildQueryString(postcard);
+		console.log(shareLink);
 	}
 }
 
@@ -166,7 +167,7 @@ function displayPostcard(contents, mode){
 		var disp_val = "impact3val-";
 	}
 	for (var i = contents.length - 1; i >= 0; i--) {
-		document.getElementById(disp_pre + contents[i].desc).className = "impacts display impact-" + contents[i].desc;
+		document.getElementById(disp_pre + contents[i].desc).className = "shareimpacts display shareimpact-" + contents[i].desc;
 		document.getElementById(disp_val + contents[i].desc).innerHTML = contents[i].num;
 	};
 }
