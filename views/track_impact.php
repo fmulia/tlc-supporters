@@ -454,6 +454,8 @@
 .shareMoreInfo{
 	color: #000;
 	clear: both;
+	position: relative;
+	padding-right: 80px;
 }
 .shareimpacts{
 	width: 50%;
@@ -806,6 +808,15 @@
 	background-size: 100%;
 	padding:40px;
 }
+.logotlc{
+	background: url('/wp-content/plugins/tlc-supporters/images/logo-tlc.jpeg') no-repeat;
+	background-size: 100%;
+	width: 100px;
+	height: 50px;
+	position: absolute;
+	right: 0;
+	top: -6px;
+}
 /* end share impact */
 
 </style>
@@ -880,7 +891,7 @@
 				<div class="shareimpacts nodisplay shareimpact-17" id="impact3-17"><div id="impact3val-17" class="no17">201</div></div>
 				<div class="shareimpacts nodisplay shareimpact-18" id="impact3-18"><div id="impact3val-18" class="no18">201</div></div>
 			</div>
-			<div class="shareMoreInfo">Visit: <a href="www.thislifecambodia.org/donate">www.thislifecambodia.org/donate</a> to #TrackYoutImpact</div>
+			<div class="shareMoreInfo">Visit: <a href="www.thislifecambodia.org/donate">www.thislifecambodia.org/donate</a> to #TrackYoutImpact <span class="logotlc"></span></div>
 			<div class="shareICons">
 				<ul>
 					<li><a href="" class="card"></a></li>
