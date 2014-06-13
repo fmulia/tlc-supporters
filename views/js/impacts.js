@@ -127,6 +127,10 @@ function main(state){
 			alert("Please enter a valid value");
 			return;
 		}
+		if(money < 10){
+			alert("Please enter an amount higher than $10");
+			return;
+		}
 		var siteStr = "sandbox";
 		var emailAddr = "fmulia-us-donate@paypal.com";
 		var donationMsg = "Donation+for+This+Life+Cambodia"
