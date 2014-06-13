@@ -71,7 +71,7 @@ function getImpacts(money)
 	{
 		if(pickedImpacts[i].impact_instances>0)
 		{
-			result[count] = [{desc:pickedImpacts[i].desc, num:pickedImpacts[i].impact_instances, url:pickedImpacts[i].url}];
+			result[count] = {desc:pickedImpacts[i].desc, num:pickedImpacts[i].impact_instances, url:pickedImpacts[i].url};
 			++count;
 		}
 	}
@@ -93,6 +93,14 @@ var urlParams;
        urlParams[decode(match[1])] = decode(match[2]);
 })();
 
+function init(){
+	if(urlParams['state'] != null){
+		main(urlParams(parseInt('state')));
+	}
+	else{
+		main(1);
+	}
+}
 
 function main(state){
 	if(state == 1){
@@ -123,6 +131,7 @@ function displayPostcard(contents){
 	//TODO: display the postcard
 	for (var i = contents.length - 1; i >= 0; i--) {
 		document.getElementById("impact-" + contents[i].desc).className = "impacts display"
+		document.getElementById("impactval-" + contents[i].desc).innerHTML = contents[i].num;
 	};
 }
 
@@ -144,3 +153,5 @@ function buildQueryString(contents){
 	};
 	return string;
 }
+
+window.onload = setTimeout(init, 500);
