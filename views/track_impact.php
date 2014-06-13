@@ -1,5 +1,11 @@
 <style type="text/css">
 /* track impact */
+.display{
+	display: inline-block;
+}
+.nodisplay{
+	display: none;
+}
 .donateContainer{
 	width: 100%;
 	height: auto;
@@ -185,7 +191,7 @@
 			<!-- <a href="" class="buttons-1">LET'S DO IT!</a>
 			<a href="" class="buttons-2">MAKE IT MONTHLY</a> -->
 
-			 <a href="" class="buttons-1">SHOW ME</a>
+			 <a href="#" class="buttons-1" onclick="main(2);">SHOW ME</a>
 
 		</div>
 		<p class="descr">
@@ -200,9 +206,9 @@
 				<a href="" class="buttons-1">LET'S DO IT!</a>
 			</div>
 			<div class="impactC">
-				<div class="impacts" id="impact-1"><div class="no2">101</div></div>
-				<div class="impacts" id="impact-2"><div class="number">502</div></div>
-				<div class="impacts" id="impact-3"><div class="no3">101</div></div>
+				<div class="impacts nodisplay" id="impact-1"><div class="no2">101</div></div>
+				<div class="impacts nodisplay" id="impact-2"><div class="number">502</div></div>
+				<div class="impacts nodisplay" id="impact-3"><div class="no3">101</div></div>
 			</div>
 		</div>
 	</div>

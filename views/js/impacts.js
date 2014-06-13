@@ -1,26 +1,25 @@
 // Generate impact of a donation.
-
-var impactData = [{desc:'a', value:13.88, url:'images/icons-impacts/icon-big-ideas.jpg', impact_instances:0},
-				  {desc:'b', value:1.39, url:'images/icons-impacts/icon-bikes.jpg', impact_instances:0},
-				  {desc:'c', value:0.5, url:'images/icons-impacts/icon-books.jpg', impact_instances:0},
-				  {desc:'d', value:1.25, url:'images/icons-impacts/icon-citizens-rights.jpg', impact_instances:0},
-				  //{desc:'e', value:0.5, url:'images/icons-impacts/icon-communities-priorities.jpg', impact_instances:0},
-				  {desc:'f', value:1.04, url:'images/icons-impacts/icon-community-campaigns.jpg', impact_instances:0},
-				  {desc:'g', value:0.28, url:'images/icons-impacts/icon-community-consultations.jpg', impact_instances:0},
-				  //{desc:'h', value:0.8, url:'images/icons-impacts/icon-crcp.jpg', impact_instances:0},
-				  {desc:'i', value:22.50, url:'images/icons-impacts/icon-families.jpg', impact_instances:0},
-				  {desc:'j', value:16.67, url:'images/icons-impacts/icon-futures.jpg', impact_instances:0},
-				  {desc:'k', value:4.17, url:'images/icons-impacts/icon-health-care.jpg', impact_instances:0},
-				  {desc:'l', value:25.00, url:'images/icons-impacts/icon-scholarship.jpg', impact_instances:0},
-				  //{desc:'m', value:0.13, url:'images/icons-impacts/icon-school-community.jpg', impact_instances:0},
-				  {desc:'n', value:1.9, url:'images/icons-impacts/icon-school-support.jpg', impact_instances:0},
-				  {desc:'o', value:12.5, url:'images/icons-impacts/icon-self-sustaining.jpg', impact_instances:0},
-				  {desc:'p', value:0.69, url:'images/icons-impacts/icon-solar-lamp.jpg', impact_instances:0},
-				  {desc:'q', value:3.60, url:'images/icons-impacts/icon-teachers.jpg', impact_instances:0},
-				  {desc:'r', value:0.66, url:'images/icons-impacts/icon-tool-kits.jpg', impact_instances:0}];
 				  
 function getImpacts(money)
 {
+	var impactData = [{desc:'1', value:13.88, url:'images/icons-impacts/icon-big-ideas.jpg', impact_instances:0},
+				  {desc:'2', value:1.39, url:'images/icons-impacts/icon-bikes.jpg', impact_instances:0},
+				  {desc:'3', value:0.5, url:'images/icons-impacts/icon-books.jpg', impact_instances:0},
+				  {desc:'4', value:1.25, url:'images/icons-impacts/icon-citizens-rights.jpg', impact_instances:0},
+				  //{desc:'5', value:0.5, url:'images/icons-impacts/icon-communities-priorities.jpg', impact_instances:0},
+				  {desc:'6', value:1.04, url:'images/icons-impacts/icon-community-campaigns.jpg', impact_instances:0},
+				  {desc:'7', value:0.28, url:'images/icons-impacts/icon-community-consultations.jpg', impact_instances:0},
+				  //{desc:'8', value:0.8, url:'images/icons-impacts/icon-crcp.jpg', impact_instances:0},
+				  {desc:'9', value:22.50, url:'images/icons-impacts/icon-families.jpg', impact_instances:0},
+				  {desc:'10', value:16.67, url:'images/icons-impacts/icon-futures.jpg', impact_instances:0},
+				  {desc:'11', value:4.17, url:'images/icons-impacts/icon-health-care.jpg', impact_instances:0},
+				  {desc:'12', value:25.00, url:'images/icons-impacts/icon-scholarship.jpg', impact_instances:0},
+				  //{desc:'13', value:0.13, url:'images/icons-impacts/icon-school-community.jpg', impact_instances:0},
+				  {desc:'14', value:1.9, url:'images/icons-impacts/icon-school-support.jpg', impact_instances:0},
+				  {desc:'15', value:12.5, url:'images/icons-impacts/icon-self-sustaining.jpg', impact_instances:0},
+				  {desc:'16', value:0.69, url:'images/icons-impacts/icon-solar-lamp.jpg', impact_instances:0},
+				  {desc:'17', value:3.60, url:'images/icons-impacts/icon-teachers.jpg', impact_instances:0},
+				  {desc:'18', value:0.66, url:'images/icons-impacts/icon-tool-kits.jpg', impact_instances:0}];
 	var impactsNum = 0;
 	
 	if(money <10){}
@@ -98,23 +97,33 @@ var urlParams;
 function main(state){
 	if(state == 1){
 		//branch: track amount
+		document.getElementById("donation").className = "display";
+		document.getElementById("showImpact").className = "nodisplay"
 	}
 	else if(state == 2){
+		var money = parseInt(document.getElementById("amount").value);
+		if(isNaN(money)){
+			alert("Please enter a valid value");
+			return;
+		}
+		document.getElementById("donation").className = "nodisplay"
+		document.getElementById("showImpact").className = "display"
 		//branch: display postcard and donate links
-		var money = 10;//get this dynamically later
 		var outputs = getImpacts(money);
-		displayPostcard("#postcard1", outputs);
+		displayPostcard(outputs);
 	}
 	else if(state == 3){
 		//branch: redirect back from paypal and display the link
 		var postcard = buildPostcardContentFromQueryString();
-		displayPostcard("#postcard2", postcard);
+		displayPostcard(postcard);
 	}
 }
 
-function displayPostcard(id, contents){
+function displayPostcard(contents){
 	//TODO: display the postcard
-	[{id: numb}]
+	for (var i = contents.length - 1; i >= 0; i--) {
+		document.getElementById("impact-" + contents[i].desc).className = "impacts display"
+	};
 }
 
 function buildPostcardContentFromQueryString(){
@@ -126,4 +135,12 @@ function buildPostcardContentFromQueryString(){
 		contents.push({ desc: item[0], num:parseInt(item[1])});
 	};
 	return contents;
+}
+
+function buildQueryString(contents){
+	var string = 'card=';
+	for (var i = contents.length - 1; i >= 0; i--) {
+		string += contents[i].desc + ':' + contents[i].num + ';'; 
+	};
+	return string;
 }
