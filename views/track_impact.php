@@ -822,7 +822,7 @@
 </style>
 <script src="/wp-content/plugins/tlc-supporters/views/js/impacts.js"></script>
 <div id="trackImpact">
-	<div id="donation" class="donateContainer">
+	<div id="donation" class="donateContainer nodisplay">
 		<h1>TRACK YOUR IMPACT</h1>
 		<div class="amount">
 			<span class="dollar">$</span><input type="text" id="amount" class="enterAmt" placeholder="amount">
@@ -840,7 +840,7 @@
 		Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
 		</p>
 	</div>
-	<div id="showImpact">
+	<div id="showImpact" class="nodisplay">
 		<div class="impactContainer">
 			<div class="amountC">
 				IN 1 MONTH IN A TLC COMMUNITY. $<span id="donationAmount"></span> CAN ENABLE...
@@ -868,7 +868,7 @@
 			</div>
 		</div>
 	</div>
-	<div id="shareImpact">
+	<div id="shareImpact" class="nodisplay">
 		<div class="shareimpactContainer">
 			<div class="shareTitle">I SUPPORTED THIS LIFE CAMBODIA WITH $<span id="donationAmount-1"></span> AND THIS IS WHAT CAN BE ACHIEVED...</div>
 			<div class="impactC">
