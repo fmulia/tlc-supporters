@@ -155,10 +155,11 @@ function main(state){
 		document.getElementById("showImpact").className = "nodisplay";
 		document.getElementById("shareImpact").className = "display";
 		displayPostcard(postcard, 2);
-		var shareLink = buildQueryString(postcard);
+		var shareLink = "http://www.thislifecambodia.org/donations" + buildQueryString(postcard);
 		console.log(shareLink);
-		window.open("http://www.facebook.com/sharer/sharer.php?u=" + shareLink, "facebook_share", "height=320, width=640, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, directories=no, status=no");
 		//grab document element and pass the url to it
+		document.getElementById("share").href = "http://www.facebook.com/sharer/sharer.php?u=" + shareLink;
+		document.getElementById("share").target = "_blank";
 	}
 }
 

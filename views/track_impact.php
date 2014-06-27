@@ -896,7 +896,7 @@
 				<ul>
 					<li><a href="" class="card"></a></li>
 					<li><a href="" class="print"></a></li>
-					<li><a href="" class="share"></a></li>
+					<li><a href="" class="share" id="share"></a></li>
 				</ul></div>
 		</div>
 	</div>
