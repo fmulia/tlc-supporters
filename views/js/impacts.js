@@ -97,7 +97,34 @@ function getImpacts(money)
 
 var postcard = '';
 var money = '';
+
+function preload(){
+	var urls = [
+		'images/icons-impacts/icon-big-ideas.jpg',
+		'images/icons-impacts/icon-bikes.jpg',
+		'images/icons-impacts/icon-books.jpg',
+		'images/icons-impacts/icon-citizens-rights.jpg',
+		'images/icons-impacts/icon-community-campaigns.jpg',
+		'images/icons-impacts/icon-community-consultations.jpg',
+		'images/icons-impacts/icon-families.jpg',
+		'images/icons-impacts/icon-futures.jpg',
+		'images/icons-impacts/icon-health-care.jpg',
+		'images/icons-impacts/icon-scholarship.jpg',
+		'images/icons-impacts/icon-school-support.jpg',
+		'images/icons-impacts/icon-self-sustaining.jpg',
+		'images/icons-impacts/icon-solar-lamp.jpg',
+		'images/icons-impacts/icon-teachers.jpg',
+		'images/icons-impacts/icon-tool-kits.jpg'
+	]
+	for (var i = urls.length - 1; i >= 0; i--) {
+		urls[i] = '/wp-content/plugins/tlc-supporters/' + urls[i];
+		var image = new Image();
+		image.src = urls[i];
+	}
+}
+
 function init(){
+	setTimeout(preload, 500);
 	if(getCookie("postcard") != ""){
 		postcard = JSON.parse(getCookie("postcard"));
 		money = getCookie("money");
