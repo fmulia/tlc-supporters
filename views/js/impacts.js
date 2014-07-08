@@ -187,6 +187,12 @@ function main(state){
 		//grab document element and pass the url to it
 		document.getElementById("share").href = "http://www.facebook.com/sharer/sharer.php?u=" + shareLink;
 		document.getElementById("share").target = "_blank";
+
+		//postcard, send as email
+		var recipient = "yourfriends@gmail.com";
+		var subject = "I have supported This Life Cambodia";
+		var message = "Please join me for this good cause: " + shareLink;
+		document.getElementById("email").href = "mailto:" + recipient + "?subject=" + subject + "&body=" + message;
 	}
 }
 

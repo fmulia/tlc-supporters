@@ -894,7 +894,7 @@
 			<div class="shareMoreInfo">Visit: <a href="www.thislifecambodia.org/donate">www.thislifecambodia.org/donate</a> to #TrackYoutImpact <span class="logotlc"></span></div>
 			<div class="shareICons">
 				<ul>
-					<li><a href="" class="card"></a></li>
+					<li><a href="" class="card" id="email"></a></li>
 					<li><a href="" class="print"></a></li>
 					<li><a href="" class="share" id="share"></a></li>
 				</ul></div>
