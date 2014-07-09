@@ -455,7 +455,7 @@
 	color: #000;
 	clear: both;
 	position: relative;
-	padding-right: 80px;
+	padding-left: 10px;
 }
 .shareimpacts{
 	width: 50%;
@@ -815,10 +815,20 @@
 	height: 50px;
 	position: absolute;
 	right: 0;
-	top: -6px;
+	top: -18px;
+}
+.shareTitle {
+	color: #000;
+	font-weight: bold;
+	padding: 15px;
+	font-size: 20px;
 }
 /* end share impact */
 
+</style>
+<style type="text/css" media="print">
+    #sbleft, #header, #navigation, #header_search, #footer, #footercopyright, .shareICons { display: none; }
+ body, .post-meta{ background-color:#fff; }
 </style>
 <script src="/wp-content/plugins/tlc-supporters/views/js/impacts.js"></script>
 <div id="trackImpact">
