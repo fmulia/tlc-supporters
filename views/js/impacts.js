@@ -166,7 +166,7 @@ function main(state){
 			".paypal.com/cgi-bin/webscr?cmd=_donations&no_shipping=0&no_note=1&submit=Donate&business=" + emailAddr + 
 			"&item_name=" + donationMsg + "&amount=" + money + "&currency_code=USD&return=" + encodeURIComponent(window.location)  + "&cancel=" + encodeURIComponent(window.location);
 		document.getElementById("donation").className = "nodisplay"
-		document.getElementById("showImpact").className = "display"
+		document.getElementById("showImpact").className = "display trackImpactBg"
 		document.getElementById("shareImpact").className = "nodisplay"
 		
 		postcard = getImpacts(money);

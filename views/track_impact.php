@@ -6,6 +6,9 @@
 .nodisplay{
 	display: none;
 }
+.trackImpactBg{
+ 	background:#fff;
+}
 .donateContainer{
 	width: 100%;
 	height: auto;
@@ -108,8 +111,17 @@
 	background: #000;
 	position: relative;
 }
+.amountC a{
+ 	color:#FF9900;
+}
+.amountC a:hover, .amountC a:visited{
+ 	color:#546628;
+}
 .amountC{
-	color: #fff;
+	 color: #fff;
+	 margin-top:40px;
+	 font-size:15px;  
+	 float: left;
 }
 .impactC{
 	background: #fff;
@@ -857,51 +869,53 @@
 				<a href="" id="donationURL" class="buttons-1" onclick="startCookie()">LET'S DO IT!</a>
 			</div>
 			<div class="impactC">
-				<div class="impacts nodisplay impact-1" id="impact-1"><div id="impactval-1" class="no2">101</div></div>
-				<div class="impacts nodisplay impact-2" id="impact-2"><div id="impactval-2" class="number">501</div></div>
-				<div class="impacts nodisplay impact-3" id="impact-3"><div id="impactval-3" class="no3">101</div></div>
-				<div class="impacts nodisplay impact-4" id="impact-4"><div id="impactval-4" class="no4">500</div></div>
-				<div class="impacts nodisplay impact-5" id="impact-5"><div id="impactval-5" class="no5">501</div></div>
-				<div class="impacts nodisplay impact-6" id="impact-6"><div id="impactval-6" class="no6">301</div></div>
-				<div class="impacts nodisplay impact-7" id="impact-7"><div id="impactval-7" class="no7">301</div></div>
-				<div class="impacts nodisplay impact-8" id="impact-8"><div id="impactval-8" class="no8">201</div></div>
-				<div class="impacts nodisplay impact-9" id="impact-9"><div id="impactval-9" class="no9">201</div></div>
-				<div class="impacts nodisplay impact-10" id="impact-10"><div id="impactval-10" class="no10">201</div></div>
-				<div class="impacts nodisplay impact-11" id="impact-11"><div id="impactval-11" class="no11">201</div></div>
-				<div class="impacts nodisplay impact-12" id="impact-12"><div id="impactval-12" class="no12">201</div></div>
-				<div class="impacts nodisplay impact-13" id="impact-13"><div id="impactval-13" class="no13">201</div></div>
-				<div class="impacts nodisplay impact-14" id="impact-14"><div id="impactval-14" class="no14">201</div></div>
-				<div class="impacts nodisplay impact-15" id="impact-15"><div id="impactval-15" class="no15">201</div></div>
-				<div class="impacts nodisplay impact-16" id="impact-16"><div id="impactval-16" class="no16">201</div></div>
-				<div class="impacts nodisplay impact-17" id="impact-17"><div id="impactval-17" class="no17">201</div></div>
-				<div class="impacts nodisplay impact-18" id="impact-18"><div id="impactval-18" class="no18">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-1" id="impact-1"><div id="impactval-1" class="no2">101</div></div>
+				<div class="shareimpacts nodisplay shareimpact-2" id="impact-2"><div id="impactval-2" class="number">501</div></div>
+				<div class="shareimpacts nodisplay shareimpact-3" id="impact-3"><div id="impactval-3" class="no3">101</div></div>
+				<div class="shareimpacts nodisplay shareimpact-4" id="impact-4"><div id="impactval-4" class="no4">500</div></div>
+				<div class="shareimpacts nodisplay shareimpact-5" id="impact-5"><div id="impactval-5" class="no5">501</div></div>
+				<div class="shareimpacts nodisplay shareimpact-6" id="impact-6"><div id="impactval-6" class="no6">301</div></div>
+				<div class="shareimpacts nodisplay shareimpact-7" id="impact-7"><div id="impactval-7" class="no7">301</div></div>
+				<div class="shareimpacts nodisplay shareimpact-8" id="impact-8"><div id="impactval-8" class="no8">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-9" id="impact-9"><div id="impactval-9" class="no9">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-10" id="impact-10"><div id="impactval-10" class="no10">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-11" id="impact-11"><div id="impactval-11" class="no11">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-12" id="impact-12"><div id="impactval-12" class="no12">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-13" id="impact-13"><div id="impactval-13" class="no13">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-14" id="impact-14"><div id="impactval-14" class="no14">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-15" id="impact-15"><div id="impactval-15" class="no15">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-16" id="impact-16"><div id="impactval-16" class="no16">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-17" id="impact-17"><div id="impactval-17" class="no17">201</div></div>
+				<div class="shareimpacts nodisplay shareimpact-18" id="impact-18"><div id="impactval-18" class="no18">201</div></div>
 			</div>
 		</div>
 	</div>
 	<div id="shareImpact" class="nodisplay">
 		<div class="shareimpactContainer">
-			<div class="shareTitle">I SUPPORTED THIS LIFE CAMBODIA WITH $<span id="donationAmount-1"></span> AND THIS IS WHAT CAN BE ACHIEVED...</div>
-			<div class="impactC">
-				<div class="shareimpacts nodisplay shareimpact-1" id="impact3-1"><div id="impact3val-1" class="no2">101</div></div>
-				<div class="shareimpacts nodisplay shareimpact-2" id="impact3-2"><div id="impact3val-2" class="number">501</div></div>
-				<div class="shareimpacts nodisplay shareimpact-3" id="impact3-3"><div id="impact3val-3" class="no3">101</div></div>
-				<div class="shareimpacts nodisplay shareimpact-4" id="impact3-4"><div id="impact3val-4" class="no4">500</div></div>
-				<div class="shareimpacts nodisplay shareimpact-5" id="impact3-5"><div id="impact3val-5" class="no5">501</div></div>
-				<div class="shareimpacts nodisplay shareimpact-6" id="impact3-6"><div id="impact3val-6" class="no6">301</div></div>
-				<div class="shareimpacts nodisplay shareimpact-7" id="impact3-7"><div id="impact3val-7" class="no7">301</div></div>
-				<div class="shareimpacts nodisplay shareimpact-8" id="impact3-8"><div id="impact3val-8" class="no8">201</div></div>
-				<div class="shareimpacts nodisplay shareimpact-9" id="impact3-9"><div id="impact3val-9" class="no9">201</div></div>
-				<div class="shareimpacts nodisplay shareimpact-10" id="impact3-10"><div id="impact3val-10" class="no10">201</div></div>
-				<div class="shareimpacts nodisplay shareimpact-11" id="impact3-11"><div id="impact3val-11" class="no11">201</div></div>
-				<div class="shareimpacts nodisplay shareimpact-12" id="impact3-12"><div id="impact3val-12" class="no12">201</div></div>
-				<div class="shareimpacts nodisplay shareimpact-13" id="impact3-13"><div id="impact3val-13" class="no13">201</div></div>
-				<div class="shareimpacts nodisplay shareimpact-14" id="impact3-14"><div id="impact3val-14" class="no14">201</div></div>
-				<div class="shareimpacts nodisplay shareimpact-15" id="impact3-15"><div id="impact3val-15" class="no15">201</div></div>
-				<div class="shareimpacts nodisplay shareimpact-16" id="impact3-16"><div id="impact3val-16" class="no16">201</div></div>
-				<div class="shareimpacts nodisplay shareimpact-17" id="impact3-17"><div id="impact3val-17" class="no17">201</div></div>
-				<div class="shareimpacts nodisplay shareimpact-18" id="impact3-18"><div id="impact3val-18" class="no18">201</div></div>
+			<div id="printCard">
+				<div class="shareTitle">I SUPPORTED THIS LIFE CAMBODIA WITH $<span id="donationAmount-1"></span> AND THIS IS WHAT CAN BE ACHIEVED...</div>
+				<div class="impactC">
+					<div class="shareimpacts nodisplay shareimpact-1" id="impact3-1"><div id="impact3val-1" class="no2">101</div></div>
+					<div class="shareimpacts nodisplay shareimpact-2" id="impact3-2"><div id="impact3val-2" class="number">501</div></div>
+					<div class="shareimpacts nodisplay shareimpact-3" id="impact3-3"><div id="impact3val-3" class="no3">101</div></div>
+					<div class="shareimpacts nodisplay shareimpact-4" id="impact3-4"><div id="impact3val-4" class="no4">500</div></div>
+					<div class="shareimpacts nodisplay shareimpact-5" id="impact3-5"><div id="impact3val-5" class="no5">501</div></div>
+					<div class="shareimpacts nodisplay shareimpact-6" id="impact3-6"><div id="impact3val-6" class="no6">301</div></div>
+					<div class="shareimpacts nodisplay shareimpact-7" id="impact3-7"><div id="impact3val-7" class="no7">301</div></div>
+					<div class="shareimpacts nodisplay shareimpact-8" id="impact3-8"><div id="impact3val-8" class="no8">201</div></div>
+					<div class="shareimpacts nodisplay shareimpact-9" id="impact3-9"><div id="impact3val-9" class="no9">201</div></div>
+					<div class="shareimpacts nodisplay shareimpact-10" id="impact3-10"><div id="impact3val-10" class="no10">201</div></div>
+					<div class="shareimpacts nodisplay shareimpact-11" id="impact3-11"><div id="impact3val-11" class="no11">201</div></div>
+					<div class="shareimpacts nodisplay shareimpact-12" id="impact3-12"><div id="impact3val-12" class="no12">201</div></div>
+					<div class="shareimpacts nodisplay shareimpact-13" id="impact3-13"><div id="impact3val-13" class="no13">201</div></div>
+					<div class="shareimpacts nodisplay shareimpact-14" id="impact3-14"><div id="impact3val-14" class="no14">201</div></div>
+					<div class="shareimpacts nodisplay shareimpact-15" id="impact3-15"><div id="impact3val-15" class="no15">201</div></div>
+					<div class="shareimpacts nodisplay shareimpact-16" id="impact3-16"><div id="impact3val-16" class="no16">201</div></div>
+					<div class="shareimpacts nodisplay shareimpact-17" id="impact3-17"><div id="impact3val-17" class="no17">201</div></div>
+					<div class="shareimpacts nodisplay shareimpact-18" id="impact3-18"><div id="impact3val-18" class="no18">201</div></div>
+				</div>
+				<div class="shareMoreInfo">Visit: <a href="www.thislifecambodia.org/donate">www.thislifecambodia.org/donate</a> to #TrackYoutImpact <span class="logotlc"></span></div>
 			</div>
-			<div class="shareMoreInfo">Visit: <a href="www.thislifecambodia.org/donate">www.thislifecambodia.org/donate</a> to #TrackYoutImpact <span class="logotlc"></span></div>
 			<div class="shareICons">
 				<ul>
 					<li><a href="" class="card" id="email"></a></li>
