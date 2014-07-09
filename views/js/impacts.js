@@ -100,24 +100,24 @@ var money = '';
 
 function preload(){
 	var urls = [
-		'images/icons-impacts/icon-big-ideas.jpg',
-		'images/icons-impacts/icon-bikes.jpg',
-		'images/icons-impacts/icon-books.jpg',
-		'images/icons-impacts/icon-citizens-rights.jpg',
-		'images/icons-impacts/icon-community-campaigns.jpg',
-		'images/icons-impacts/icon-community-consultations.jpg',
-		'images/icons-impacts/icon-families.jpg',
-		'images/icons-impacts/icon-futures.jpg',
-		'images/icons-impacts/icon-health-care.jpg',
-		'images/icons-impacts/icon-scholarship.jpg',
-		'images/icons-impacts/icon-school-support.jpg',
-		'images/icons-impacts/icon-self-sustaining.jpg',
-		'images/icons-impacts/icon-solar-lamp.jpg',
-		'images/icons-impacts/icon-teachers.jpg',
-		'images/icons-impacts/icon-tool-kits.jpg'
+		'icon-big-ideas.jpg',
+		'icon-bikes.jpg',
+		'icon-books.jpg',
+		'icon-citizens-rights.jpg',
+		'icon-community-campaigns.jpg',
+		'icon-community-consultations.jpg',
+		'icon-families.jpg',
+		'icon-futures.jpg',
+		'icon-health-care.jpg',
+		'icon-scholarship.jpg',
+		'icon-school-support.jpg',
+		'icon-self-sustaining.jpg',
+		'icon-solar-lamp.jpg',
+		'icon-teachers.jpg',
+		'icon-tool-kits.jpg'
 	]
 	for (var i = urls.length - 1; i >= 0; i--) {
-		urls[i] = '/wp-content/plugins/tlc-supporters/' + urls[i];
+		urls[i] = '/wp-content/plugins/tlc-supporters/images/icons-impacts/' + urls[i];
 		var image = new Image();
 		image.src = urls[i];
 	}
