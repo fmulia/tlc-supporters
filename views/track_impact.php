@@ -118,7 +118,7 @@
  	color:#546628;
 }
 .amountC{
-	 color: #fff;
+	 color: #000;
 	 margin-top:40px;
 	 font-size:15px;  
 	 float: left;
@@ -481,8 +481,8 @@
 .shareimpacts .number{
 	color: #fff;
 	position: absolute;
-	right: 27px;
-	top: 7px;
+	right: 29px;
+	top: 14px;
 	font-size: 27px;
 	transform: rotate(4deg);
 	-ms-transform: rotate(4deg);
@@ -495,7 +495,7 @@
 	color: #fff;
 	position: absolute;
 	right: 53px;
-	bottom: 33px;
+	bottom: 39px;
 	font-size: 20px;
 	transform: rotate(10deg);
 	-ms-transform: rotate(10deg);
@@ -507,8 +507,8 @@
 .shareimpacts .no3{
 	color: #fff;
 	position: absolute;
-	left: 21px;
-	top: 6px;
+	left: 15px;
+	top: 21px;
 	font-size: 35px;
 	transform: rotate(-8deg);
 	-ms-transform: rotate(-8deg);
@@ -533,8 +533,8 @@
 .shareimpacts .no5{
 	color: #fff;
 	position: absolute;
-	right: 37px;
-	top: 8px;
+	right: 38px;
+	top: 16px;
 	font-size: 27px;
 	transform: rotate(8deg);
 	-ms-transform: rotate(8deg);
@@ -546,8 +546,8 @@
 .shareimpacts .no6{
 	color: #fff;
 	position: absolute;
-	right: 42px;
-	top: 7px;
+	right: 43px;
+	top: 12px;
 	font-size: 24px;
 	transform: rotate(7deg);
 	-ms-transform: rotate(7deg);
@@ -559,8 +559,8 @@
 .shareimpacts .no7{
 	color: #fff;
 	position: absolute;
-	right: 11px;
-	top: 9px;
+	right: 13px;
+	top: 14px;
 	font-size: 25px;
 	transform: rotate(7deg);
 	-ms-transform: rotate(7deg);
@@ -572,8 +572,8 @@
 .shareimpacts .no8{
 	color: #fff;
 	position: absolute;
-	right: 29px;
-	top: 6px;
+	right: 31px;
+	top: 11px;
 	font-size: 21px;
 	transform: rotate(7deg);
 	-ms-transform: rotate(7deg);
@@ -586,7 +586,7 @@
 	color: #fff;
 	position: absolute;
 	right: 3px;
-	top: 29px;
+	top: 34px;
 	font-size: 22px;
 	transform: rotate(7deg);
 	-ms-transform: rotate(7deg);
@@ -598,8 +598,8 @@
 .shareimpacts .no10{
 	color: #fff;
 	position: absolute;
-	right: 19px;
-	top: 7px;
+	right: 10px;
+	top: 15px;
 	font-size: 24px;
 	transform: rotate(7deg);
 	-ms-transform: rotate(7deg);
@@ -611,8 +611,8 @@
 .shareimpacts .no11{
 	color: #fff;
 	position: absolute;
-	right: 15px;
-	top: 9px;
+	right: 17px;
+	top: 18px;
 	font-size: 28px;
 	transform: rotate(9deg);
 	-ms-transform: rotate(9deg);
@@ -625,7 +625,7 @@
 	color: #fff;
 	position: absolute;
 	right: 18px;
-	top: 10px;
+	top: 20px;
 	font-size: 30px;
 	transform: rotate(8deg);
 	-ms-transform: rotate(8deg);
@@ -637,8 +637,8 @@
 .shareimpacts .no13{
 	color: #fff;
 	position: absolute;
-	right: 7px;
-	top: 9px;
+	right: 8px;
+	top: 11px;
 	font-size: 20px;
 	transform: rotate(9deg);
 	-ms-transform: rotate(9deg);
@@ -650,8 +650,8 @@
 .shareimpacts .no14{
 	color: #fff;
 	position: absolute;
-	right: 23px;
-	top: 10px;
+	right: 25px;
+	top: 16px;
 	font-size: 25px;
 	transform: rotate(7deg);
 	-ms-transform: rotate(7deg);
@@ -663,8 +663,8 @@
 .shareimpacts .no15{
 	color: #fff;
 	position: absolute;
-	right: 15px;
-	top: 12px;
+	right: 16px;
+	top: 17px;
 	font-size: 27px;
 	transform: rotate(13deg);
 	-ms-transform: rotate(13deg);
@@ -676,8 +676,8 @@
 .shareimpacts .no16{
 	color: #fff;
 	position: absolute;
-	right: 9px;
-	top: 86px;
+	right: 10px;
+	top: 92px;
 	font-size: 25px;
 	transform: rotate(8deg);
 	-ms-transform: rotate(8deg);
@@ -689,8 +689,8 @@
 .shareimpacts .no17{
 	color: #fff;
 	position: absolute;
-	right: 50px;
-	bottom: 41px;
+	right: 52px;
+	bottom: 48px;
 	font-size: 22px;
 	transform: rotate(9deg);
 	-ms-transform: rotate(9deg);
@@ -703,7 +703,7 @@
 	color: #fff;
 	position: absolute;
 	right: 11px;
-	top: 25px;
+	top: 30px;
 	font-size: 26px;
 	transform: rotate(7deg);
 	-ms-transform: rotate(7deg);
@@ -893,7 +893,7 @@
 	<div id="shareImpact" class="nodisplay">
 		<div class="shareimpactContainer">
 			<div id="printCard">
-				<div class="shareTitle">I SUPPORTED THIS LIFE CAMBODIA WITH $<span id="donationAmount-1"></span> AND THIS IS WHAT CAN BE ACHIEVED...</div>
+				<div class="shareTitle">I SUPPORTED THIS LIFE CAMBODIA, AND THIS IS WHAT CAN BE ACHIEVED...</div>
 				<div class="impactC">
 					<div class="shareimpacts nodisplay shareimpact-1" id="impact3-1"><div id="impact3val-1" class="no2">101</div></div>
 					<div class="shareimpacts nodisplay shareimpact-2" id="impact3-2"><div id="impact3val-2" class="number">501</div></div>
@@ -919,7 +919,7 @@
 			<div class="shareICons">
 				<ul>
 					<li><a href="" class="card" id="email"></a></li>
-					<li><a href="" class="print"></a></li>
+					<li><a href="" class="print" onclick="alert('Please make sure you check \'Background colors and image\' before you print your card.\n\nTo achieve optimal printout, please choose Portrait orientation.'); window.print();"></a></li>
 					<li><a href="" class="share" id="share"></a></li>
 				</ul></div>
 		</div>

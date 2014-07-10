@@ -177,7 +177,6 @@ function main(state){
 		if(postcard == ''){
 			postcard = buildPostcardContentFromQueryString();
 		}
-		document.getElementById("donationAmount-1").innerHTML = money;
 		document.getElementById("donation").className = "nodisplay";
 		document.getElementById("showImpact").className = "nodisplay";
 		document.getElementById("shareImpact").className = "display";
