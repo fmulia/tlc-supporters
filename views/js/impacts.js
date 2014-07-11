@@ -40,9 +40,9 @@ function getImpacts(money)
 	var impactsNum = 0;
 	
 	if(money <10){}
-	else if(money<=49)  impactsNum = 4;
+	else if(money<=49)  impactsNum = 3;
 	else if(money<=99)  impactsNum = 6;
-	else if(money<=499) impactsNum = 8;
+	else if(money<=499) impactsNum = 9;
 	else impactsNum = 10;
 
 	// Generating the random impacts
@@ -165,6 +165,9 @@ function main(state){
 		document.getElementById("donationURL").href = "https://" + siteStr + 
 			".paypal.com/cgi-bin/webscr?cmd=_donations&no_shipping=0&no_note=1&submit=Donate&business=" + emailAddr + 
 			"&item_name=" + donationMsg + "&amount=" + money + "&currency_code=USD&return=" + encodeURIComponent(window.location)  + "&cancel=" + encodeURIComponent(window.location);
+		document.getElementById("donationMonthlyURL").href = "https://" + siteStr + 
+			".paypal.com/cgi-bin/webscr?cmd=_xclick-subscriptions&no_shipping=0&no_note=1&submit=Donate&business=" + emailAddr + 
+			"&item_name=" + donationMsg + "&a3=" + money + "&currency_code=USD&src=1&p3=24&t3=M&return=" + encodeURIComponent(window.location)  + "&cancel=" + encodeURIComponent(window.location);
 		document.getElementById("donation").className = "nodisplay"
 		document.getElementById("showImpact").className = "display trackImpactBg"
 		document.getElementById("shareImpact").className = "nodisplay"

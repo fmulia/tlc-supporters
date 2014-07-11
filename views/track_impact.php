@@ -111,17 +111,14 @@
 	background: #000;
 	position: relative;
 }
-.amountC a{
- 	color:#FF9900;
-}
-.amountC a:hover, .amountC a:visited{
- 	color:#546628;
-}
 .amountC{
+	width: 100%;
 	 color: #000;
 	 margin-top:40px;
+	 padding: 20px;
 	 font-size:15px;  
 	 float: left;
+	 text-align: center;
 }
 .impactC{
 	background: #fff;
@@ -859,15 +856,13 @@
 		</div>
 		<p class="descr">
 		<span>HOW THIS WORKS?</span>
-		Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus
+		Add the amount you would kindly like to donate into the boxes above and the system will automatically generate details of the monthly impact your contribution can have on the children, families and communities supported by This Life Cambodia. 
+ 		<br>
+		Once your list of impacts has been generated, confirm your donation by clicking on either of the Lets Do This / Make it Monthly options.
 		</p>
 	</div>
 	<div id="showImpact" class="nodisplay">
 		<div class="impactContainer">
-			<div class="amountC">
-				IN 1 MONTH IN A TLC COMMUNITY. $<span id="donationAmount"></span> CAN ENABLE...
-				<a href="" id="donationURL" class="buttons-1" onclick="startCookie()">LET'S DO IT!</a>
-			</div>
 			<div class="impactC">
 				<div class="shareimpacts nodisplay shareimpact-1" id="impact-1"><div id="impactval-1" class="no2">101</div></div>
 				<div class="shareimpacts nodisplay shareimpact-2" id="impact-2"><div id="impactval-2" class="number">501</div></div>
@@ -887,6 +882,13 @@
 				<div class="shareimpacts nodisplay shareimpact-16" id="impact-16"><div id="impactval-16" class="no16">201</div></div>
 				<div class="shareimpacts nodisplay shareimpact-17" id="impact-17"><div id="impactval-17" class="no17">201</div></div>
 				<div class="shareimpacts nodisplay shareimpact-18" id="impact-18"><div id="impactval-18" class="no18">201</div></div>
+			</div>
+			<div class="amountC">
+				<p>IN 1 MONTH IN A TLC COMMUNITY. $<span id="donationAmount"></span> CAN ENABLE...</p>
+				<div class="actions">
+					<a href="#" id="donationURL" class="buttons-1" onclick="startCookie()">LET'S DO IT!</a><br><br><br>
+					<a href="#" id="donationMonthlyURL" class="buttons-1" onclick="startCookie()">MAKE IT MONTHLY!</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -914,13 +916,13 @@
 					<div class="shareimpacts nodisplay shareimpact-17" id="impact3-17"><div id="impact3val-17" class="no17">201</div></div>
 					<div class="shareimpacts nodisplay shareimpact-18" id="impact3-18"><div id="impact3val-18" class="no18">201</div></div>
 				</div>
-				<div class="shareMoreInfo">Visit: <a href="www.thislifecambodia.org/donate">www.thislifecambodia.org/donate</a> to #TrackYoutImpact <span class="logotlc"></span></div>
+				<div class="shareMoreInfo">Visit: <a href="www.thislifecambodia.org/donate">www.thislifecambodia.org/donate</a> to #TrackYourImpact <span class="logotlc"></span></div>
 			</div>
 			<div class="shareICons">
 				<ul>
-					<li><a href="" class="card" id="email"></a></li>
-					<li><a href="" class="print" onclick="alert('Please make sure you check \'Background colors and image\' before you print your card.\n\nTo achieve optimal printout, please choose Portrait orientation.'); window.print();"></a></li>
-					<li><a href="" class="share" id="share"></a></li>
+					<li><a href="#" class="card" id="email"></a></li>
+					<li><a href="#" class="print" onclick="alert('Please make sure you check \'Background colors and image\' before you print your card.\n\nTo achieve optimal printout, please choose Portrait orientation.'); window.print();"></a></li>
+					<li><a href="#" class="share" id="share"></a></li>
 				</ul></div>
 		</div>
 	</div>

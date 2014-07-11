@@ -2,11 +2,11 @@
 
 /**
  * Plugin Name: TLC Supporters
- * Plugin URI: http://paypal.com
- * Description: TLC Supporters database
+ * Plugin URI: thislifecambodia.org
+ * Description: TLC Supporters donations platform
  * Version: 0.0
- * Author: PayPal
- * Author URI: http://paypal.com
+ * Author: no one
+ * Author URI: http://thislifecambodia.org
  * License: GPL
  * Text Domain: TLC Supporters
  */
